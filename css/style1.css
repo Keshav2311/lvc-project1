@@ -21,7 +21,7 @@ body {
   position: relative;
   text-align: center;
   max-width: 100vw;
-  background-image: url("../images/lvc.png");
+  background-image: url("../images/download.jpeg");
   height: 35vh;
   background-size: cover;
   
@@ -139,12 +139,13 @@ iframe {
 
 .aside {
   display: flex;
-  flex-direction: row;
-  justify-content:space-around ;
-  
+  flex-direction: column;
+  justify-content:space-between ;
+  /* width: 80vw; */
   background-color:#152050;
   color: aliceblue;
-  height: 20vh;
+  height: 10vh;
+  /* align-items: center; */
 }
 
 
@@ -158,20 +159,21 @@ iframe {
   flex-wrap: wrap;
   justify-content: space-around;
   color: aliceblue;
-  margin-top: 50px;
+  margin-top: 0px;
+  font-weight: bolder;
   
 }
 .coursesa{
   display: flex;
-  flex-direction: column;
-  justify-content:space-around;
+  flex-direction: row;
+  justify-content:space-evenly;
   color: aliceblue;
 }
 .coursesa a{
   color: beige;
   text-decoration: none;
   font-size: 1.1em;
-  
+  margin-bottom: 10px;
 }
 
 .courses li a:hover{
