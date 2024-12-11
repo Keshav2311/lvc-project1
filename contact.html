@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(250, 247, 247);
+        }
+        header{
+            
+            
+            text-align: center;
+            height: 20vh;
+            width: 100vw;
+            /* padding: 20px; */
+            /* height: 50px; */
+            font-size:40px;
+            background-color: rgb(124, 182, 230);
+        }
+        table, td {
+            background-color: rgb(196, 231, 231);
+            text-align: center;
+            margin-top: 10px;
+            color: #020202;
+            border: 0px solid rgb(2, 2, 2);
+        }
+        input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #020202; /* Gray border */
+            border-radius: 10px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            /* Bottom margin */
+           /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: rgb(2, 2, 2);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            height: 100%;
+            border-radius: 20px;
+            background-color: #f8f6f6;
+            padding: 10px;
+        }
+
+        @media (max-width:769px) {
+            header{
+                
+                width:100vw;
+                height: 20vh;
+                font-size: 1.7rem;
+            }
+            table, td{
+                font-size: 0.7rem;
+            }
+            .container{
+                padding: 2px;
+            }
+            iframe{
+                width: 150px;
+                height: 200px
+            }
+            input[type=text], select, input[type=textarea]{
+                padding: 3px;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        Contact Us
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <div class="frame">
+                    <td><h1>ADDRESS</h1><h3><i>Survey.No.192, IWF Campus, Whitefield Main Rd, B Narayanapura, Mahadevapura, Bengaluru, Karnataka 560016</i></h3>
+                    <iframe name="frm2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6001356301895!2d77.6860705742844!3d12.997407887320339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16837f54dbc9%3A0xbed84d37fcf010ca!2sImpelsys!5e0!3m2!1sen!2sin!4v1733466985584!5m2!1sen!2sin" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="align-items: center;"></iframe>
+                    </td>
+                </div>
+                <td><div class="container">
+                        <form action="action_page.php">
+                            <h2>Contact Form</h2>
+                  
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">India</option>
+                                <option value="canada">Australia</option>
+                                <option value="usa">USA</option>
+                            </select>
+                  
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:75px"></textarea>
+                  
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

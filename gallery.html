@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body{
+            background-color: rgb(253, 250, 250);
+        }
+        header{
+            text-align: center;
+            padding: 20px;
+            height: 200px;
+            font-size:40px;
+            background-color: grey;
+        }
+        .container{
+           
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            /* padding: 15px 10px 10px; */
+        }
+        a{
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+        }
+        table, th, td {
+            /* width: 100%; */
+            text-align: center;
+            color: rgb(2, 2, 2);
+            border: 1px solid rgb(255, 255, 255);
+            background-color: rgb(209, 207, 207);
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        iframe {
+
+            align-items: center;
+            width: 65%;
+            height: 60vh;  /* Set a fixed height for iframes */
+            border: 1px solid black;
+            overflow: hidden;
+            border: none;
+              /* Hide overflow */
+        }
+        /* tr , td{
+            height: 25vh;
+        } */
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+        a img{
+            width:300px;
+            aspect-ratio: 4/3;
+            object-fit: contain;
+        }
+        
+        .article2{
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <section style="display: flex; justify-content: space-between;">
+        <article style="flex: 1; margin-right: 10px;">
+            <div class="container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Photo</th>
+                    <th>Interview Video</th>
+                </tr>
+                <tr>
+                    <td><a href="assets/i1.mp4" target="frm3">Achyut Keshav</a></td>
+                    <td>Trainee Engineer</td>
+                    <td><img src="Images/ima.jpeg" alt=""></td>
+                    <td><iframe name="frm3" frameborder="0" height="100px"></iframe></td>
+                </tr>
+                <tr>
+                    <td><a href="assets/i2.mp4" target="frm4">Shailesh Tiwari</a></td>
+                    <td>Lead Tech</td>
+                    <td><img src="Images/ima.jpeg" alt=""></td>
+                    <td><iframe name="frm4" frameborder="0" height="100px"></iframe></td>
+                </tr>
+                <tr>
+                    <td><a href="assets/i3.mp4" target="frm5">Bethony</a></td>
+                    <td>Project Manager</td>
+                    <td><img src="Images/ima1.jpeg" alt=""></td>
+                    <td><iframe name="frm5" frameborder="0" height="100px"></iframe></td>
+                </tr>
+                <tr>
+                    <td><a href="assets/i4.mp4" target="frm6">Amit Singh</a></td>
+                    <td>Software Developer</td>
+                    <td><img src="Images/ima.jpeg" alt=""></td>
+                    <td><iframe name="frm6" frameborder="0" height="100px"></iframe></td>
+                </tr>
+            </table>
+            </div>
+        </article>
+        <!-- <div class="article2">
+            <article style="flex: 1; margin-left: 50px; margin-top: 20px; width: 500;"><iframe name="frm3" frameborder="0"></iframe></article>
+        </div> -->
+    </section>
+</body>
+</html>
