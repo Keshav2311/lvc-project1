@@ -274,7 +274,9 @@ footer {
   } 
   .ar2 {
     height: 25vh;
+    width: 100%;
   }
+
 
   .aside{
     height: 10vh;
@@ -289,7 +291,9 @@ footer {
     font-size: 0.4rem;
     height: 1vh;
   }
-  
+  iframe{
+    width:100%;
+  }
   
 }
 
@@ -327,9 +331,8 @@ footer {
     width: 90%;
   }
   iframe{
-    width: 90%;
-    margin: 0px;
-    padding: 0px;
+    width: 100%;
+    
   }
   
   .aside{
