@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,15 +19,96 @@
     </div>
 
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+            <!-- <a class="navbar-brand" href="home.html" target="frm1">
+                <i class="fa-solid fa-phone" title="Home"></i>
+                <span>Impelsys</span>
+            </a> -->
+            <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html" target="frm1">
+                            <i class="fa-solid fa-house" title="home"></i>
+                            <span>Home</span> 
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="mern.html" target="frm1">MERN</a>
+                            <a class="dropdown-item" href="mean.html" target="frm1">MEAN</a>
+                            <a class="dropdown-item" href="gen_ai.html" target="frm1">GEN AI</a>
+                        <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html" target="frm1">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Registration</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" target="frm1">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" target="frm1">
+                            <i class="fa-solid fa-bell"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html" target="frm1">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>help</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="frm1">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+            </div>
+            </div>
+          </nav>
+        <!-- <nav class="nav">
             <a href="home.html" target="frm1">
                 <i class="fa-solid fa-house" title="Home"></i>
                 <span>Home</span>
             </a>
-            <a href="courses.html" target="frm1">
-                <i class="fa-solid fa-book"></i>
-                <span>Courses</span>
-            </a>
+            
+             Courses Dropdown
+            <div class="dropdown">
+                <a href="courses.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Courses</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mern.html" target="frm1">MERN</a></li>
+                    <li><a class="dropdown-item" href="mean.html" target="frm1">MEAN</a></li>
+                    <li><a class="dropdown-item" href="genai.html" target="frm1">GEN AI</a></li>
+                </ul>
+            </div>
+            
             <a href="registration.html" target="frm1">
                 <i class="fa-solid fa-book"></i>
                 <span>Registration</span>
@@ -46,7 +129,39 @@
                 <i class="fa-solid fa-phone"></i>
                 <span>Contact</span>
             </a>
-        </nav>
+        </nav> -->
+        
+        <!-- <nav>
+            <a href="home.html" target="frm1">
+                <i class="fa-solid fa-house" title="Home"></i>
+                <span>Home</span>
+            </a>
+            <a href="courses.html" target="frm1">
+                <i class="fa-solid fa-book"></i>
+                <span>Courses</span>
+            </a>
+            
+            <a href="registration.html" target="frm1">
+                <i class="fa-solid fa-book"></i>
+                <span>Registration</span>
+            </a>
+            <a href="gallery.html" target="frm1">
+                <i class="fa-solid fa-camera"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="blog.html" target="frm1">
+                <i class="fa-solid fa-bell"></i>
+                <span>Blog</span>
+            </a>
+            <a href="help.html" target="frm1">
+                <i class="fa-solid fa-question"></i>
+                <span>Help</span>
+            </a>
+            <a href="contact.html" target="frm1">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+        </nav> -->
         
     </header>
 
@@ -58,18 +173,39 @@
             <iframe name="frm1" frameborder="1"></iframe>
         </article>
     </section>
-    <aside class="aside">
+    <aside class="d-flex flex-column bd-highlight mb-3 bg-dark text-light">
         <div class="courses">
-            <h1>Most Important Course from the professional:</h1>
-            </li>
+            <h1 style="text-align: center;">Most Important Course from the professional:</h1>
+            
         </div>
-        <div class="coursesa">
-            <h1><a href="mern.html" target="frm1">MERN</a></h1>
-            </li>
-            <h1><a href="mean.html" target="frm1">MEAN</a></h1>
-            </li>
-            <h1><a href="gen_ai.html" target="frm1">GEN AI</a></h1>
-            </li>
+        <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
+            <div class="card" style="width: 18rem; height: 21rem;">
+                <img class="card-img-top" src="images/mern.png" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                  <h5 class="card-title">Mern Stack</h5>
+                  <p class="card-text">The MERN stack is a popular set of technologies used for building full-stack web applications.</p>
+                  <a href="mern.html" class="btn btn-primary" target="frm1">Go somewhere</a>
+                </div>
+              </div>
+            
+              <div class="card" style="width: 18rem;height: 21rem;">
+                <img class="card-img-top" src="images/mean.png" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                  <h5 class="card-title">Mean Stack</h5>
+                  <p class="card-text">The MEAN stack is a popular technology stack used for building dynamic web applications.</p>
+                  <a href="mean.html" class="btn btn-primary" target="frm1">Go somewhere</a>
+                </div>
+              </div>
+            
+              <div class="card" style="width: 18rem; height: 21rem;">
+                <img class="card-img-top" src="images/gen.png" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                  <h5 class="card-title">Gen AI</h5>
+                  <p class="card-text">Generative AI, is a subset of artificial intelligence that focuses on creating new content. </p>
+                  <a href="gen_ai.html" class="btn btn-primary center" target="frm1">Go somewhere</a>
+                </div>
+              </div>
+            
         </div>
     </aside>
 

@@ -28,7 +28,7 @@ body {
     /* max-height: 400px; */
 }
 
-nav {
+/* nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +46,7 @@ nav a {
   width:30px;
   color: white;
   text-decoration: none;
-}
+} */
 
 .bottom-right {
   text-shadow:3px 3px rgb(3, 2, 2) ;
@@ -134,15 +134,15 @@ iframe {
   overflow: hidden;
 }
 
-.aside {
+/* .aside {
   display: flex;
   flex-direction: column;
   justify-content:space-between ;
-  /* width: 80vw; */
+  /* width: 80vw; 
   background-color:#152050;
   color: aliceblue;
   height: 10vh;
-  /* align-items: center; */
+  /* align-items: center; 
 }
 
 
@@ -183,11 +183,11 @@ iframe {
   text-align: center;
   margin: 0;
   font-size: 1px;
-  /* margin-right: 95px; */
+  /* margin-right: 95px; 
   color: white;
   font-size: 1.1em;
   
-}
+} */
 
 /* Footer */
 footer {
@@ -252,16 +252,16 @@ footer {
     font-size: 0.8rem;
   }
 
-  nav {
+  /* nav {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
   }
 
   nav a {
-    width: 50px; /* Slightly larger width for easier tap targets */
-    margin: 10px 0; /* Add spacing between links */
-  }
+    width: 50px; /* Slightly larger width for easier tap targets 
+    margin: 10px 0; /* Add spacing between links 
+  } */
   section {
     flex-direction: column;
     flex-wrap: wrap;
@@ -304,18 +304,18 @@ footer {
   .bottom-right{
     font-size: 0.9rem;
   }
-  nav {
+  /* nav {
     padding: 15px;
   }
 
   nav a {
-    width: 40px; /* Reduce width for very small screens */
-    font-size: 14px; /* Adjust font size for smaller text */
+    width: 40px; /* Reduce width for very small screens 
+    font-size: 14px; /* Adjust font size for smaller text 
   }
 
   nav a i {
-    font-size: 18px; /* Scale down icons for smaller screens */
-  }
+    font-size: 18px; /* Scale down icons for smaller screens 
+  } */
 
 
 
@@ -354,14 +354,14 @@ footer {
       font-size: 0.5rem;
       width: 90%
     }
-    .hide{
+    /* .hide{
       display: none;
     }
     .icon{
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-    }
+    } */
 }
 
 

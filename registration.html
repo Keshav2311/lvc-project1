@@ -41,31 +41,31 @@
       width: 100%;
     }    
 
-    label{
+    /* label{
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       width: 100vw;
 
-    }
+    } */
 
-    .form-container {
+    /* .form-container {
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
+        /* justify-content: center; 
         align-items: center;
         width:100vw;
         background: #f9f9f9;
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+    } */
 
-    form {
+    /* form {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     h2 {
         margin-bottom: 20px;
@@ -73,14 +73,14 @@
         text-align: center;
     }
 
-    label {
+    /* label {
         font-style: italic;
         margin-bottom: 8px;
         font-weight: bolder;
-    }
+    } */
 
     /* input[type="text"], */
-    input , textarea {
+    /* input , textarea {
         display: flex;
         flex-direction: row;
         width: 75%;
@@ -91,45 +91,45 @@
         margin-top: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-    }
+    } */
 
-    .radio-group, .checkbox-group {
+    /* .radio-group, .checkbox-group {
         margin-bottom: 15px;
         width: 100%;
-    }
-    label{
+    } */
+    /* label{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding: 10px;
       text-align: left;
       width: 20%;
-    }
-    .iptitem{
+    } */
+    /* .iptitem{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
       width: 100%;
-    }
+    } */
 
-    input[type="radio"],input[type="checkbox"]{
+    /* input[type="radio"],input[type="checkbox"]{
       width: 30px;
       height: 30px;
-    }
+    } */
 
-    textarea{
+    /* textarea{
       text-align: left;
       margin-left: auto;
       margin-right: auto;
-    }
-    .radio-group label,
+    } */
+    /* .radio-group label,
     .checkbox-group label {
         display: block;
-        /* margin-bottom: 5px; */
-    }
+        /* margin-bottom: 5px; 
+    } */
 
-    button {
+    /* button {
         width: 30%;
         padding: 5px 10px;
         margin: 10px;
@@ -141,13 +141,13 @@
         border-radius: 4px;
         cursor: pointer;
         font-size: 3em;
-    }
+    } */
 
-    button:hover {
+    /* button:hover {
         background-color: #0056b3;
-    }
+    } */
 
-    @media (max-width:769px) {
+    /* @media (max-width:769px) {
       button{
         font-size: 0.5rem;
       }
@@ -156,20 +156,20 @@
       width: 20px;
       height: 20px;
     }
-    }
+    } */
 
     @media (max-width: 400px) {
       header{
         width: 100vw;
         overflow: hidden;
       }
-      input, textarea{
+      /* input, textarea{
         padding: 0px;
         padding-left: 0px;
       }
       .form-container {
           width: 100%;
-            /* padding: 15px; */
+            /* padding: 15px; 
       }
       input , textarea {
         
@@ -193,28 +193,59 @@
     input[type="radio"],input[type="checkbox"]{
       width: 10px;
       height: 10px;
-    }
+    } */
 
 
     }
   </style>
 </head>
 <body>
-  <div class="form-container">
+  <form>
+  <h4 class="h4 bg-dark text-light">Registration Form</h4>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+  <!-- <div class="form-container">
     <form id="responsive-form">
       <header>Registration Form</header>
       <div id="contain">
-      <!-- Name Field -->
+      <!-- Name Field 
        <div class="iptitem">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
     </div>
     <div class="iptitem">
-      <!-- Email Field -->
+      <!-- Email Field 
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
     </div>
-      <!-- Gender Field -->
+      <!-- Gender Field 
        <div class="iptitem">
       <label>Gender</label>
       <div class="radio-group row">
@@ -224,7 +255,7 @@
       </div>
     </div>
     <div class="iptitem">
-      <!-- Hobbies Field -->
+      <!-- Hobbies Field 
       <label>Hobbies</label>
       <div class="checkbox-group row" >
         <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
@@ -233,14 +264,14 @@
       </div>
       </div>
       
-      <!-- Remarks Field -->
+      <!-- Remarks Field 
       <label for="remarks">Remarks</label>
       <textarea id="remarks" name="remarks" placeholder="Write your remarks here" rows="4"></textarea>
       
-      <!-- Submit Button -->
+      <!-- Submit Button 
       <button type="submit">Submit</button>
       </div>
-    </form>
-  </div>
+    </form> 
+  </div>-->
 </body>
 </html>
