@@ -2,266 +2,208 @@
 <html lang="en">
 
 <head>
-    <title>Angular Training</title>
-    <meta name="description" content="lvc website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <title>Angular Training</title>
+  <meta name="description" content="lvc website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script>
-      var myCarousel = document.querySelector('#carouselExampleControls');
-      var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 2000,
-        wrap: true
-      });
-    </script> -->
-    <style>
-      #navbar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-      }
-    </style>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+
+  <style>
+    .carousel-item img {
+      filter: blur(5px);
+      filter: brightness(70%);
+    }
+
+    #header {
+      position: absolute;
+      width: 70%;
+      height: 100%;
+      margin-left: 15vw;
+      text-align: center;
+      z-index: 10;
+      color: rgb(3, 3, 3);
+      font-size: 300%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: center;
+      user-select: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+  </style>
+
 </head>
 
 <body>
-    <!-- <div class="container-fluid bg row h-40 col-12" style="background-image: url('images/bg.webp'); background-repeat: no-repeat; background-size: cover;height: 75vh; "> -->
-        <!-- <div class="bottom-right">
-            <h1>Live Virtual Class</h1>
-        </div> -->
 
-    </div>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 text-primary " id="navbar" style="     position: absolute; top: 0; left: 0; z-index: 10;">
-            <!-- <a class="navbar-brand" href="home.html" target="frm1">
-                <i class="fa-solid fa-phone" title="Home"></i>
-                <span>Impelsys</span>
-            </a> -->
-            <div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-              
-                <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent" >
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.html" target="frm1">
-                                <i class="fa-solid fa-house" title="home"></i>
-                                <span class="">Home</span> 
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa-solid fa-book"></i>
-                                <span class="">Courses</span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-primary" href="mern.html" target="frm1">MERN</a>
-                                <a class="dropdown-item text-primary" href="mean.html" target="frm1">MEAN</a>
-                                <a class="dropdown-item text-primary" href="gen_ai.html" target="frm1">GEN AI</a>
-                                <!-- <div class="dropdown-divider"></div>
+  <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:10vh;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 text-primary " style="height: 100%;">
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html" target="frm1">
+                <i class="fa-solid fa-house" title="home"></i>
+                <span class="">Home</span>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-book"></i>
+                <span class="">Courses</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-primary" href="mern.html" target="frm1">MERN</a>
+                <a class="dropdown-item text-primary" href="mean.html" target="frm1">MEAN</a>
+                <a class="dropdown-item text-primary" href="gen_ai.html" target="frm1">GEN AI</a>
+                <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registration.html" target="frm1">
-                                <i class="fa-solid fa-person"></i>
-                                <span>Registration</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html" target="frm1">
-                                <i class="fa-solid fa-camera"></i>
-                                <span>Gallery</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html" target="frm1">
-                                <i class="fa-solid fa-bell"></i>
-                                <span>Blog</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="help.html" target="frm1">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>help</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html" target="frm1">
-                                <i class="fa-solid fa-book"></i>
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form> -->
-                </div>
-            </div>
-        </nav>
-        <!-- <nav class="nav">
-            <a href="home.html" target="frm1">
-                <i class="fa-solid fa-house" title="Home"></i>
-                <span>Home</span>
-            </a>
-            
-             Courses Dropdown
-            <div class="dropdown">
-                <a href="courses.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-book"></i>
-                    <span>Courses</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="mern.html" target="frm1">MERN</a></li>
-                    <li><a class="dropdown-item" href="mean.html" target="frm1">MEAN</a></li>
-                    <li><a class="dropdown-item" href="genai.html" target="frm1">GEN AI</a></li>
-                </ul>
-            </div>
-            
-            <a href="registration.html" target="frm1">
-                <i class="fa-solid fa-book"></i>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html" target="frm1">
+                <i class="fa-solid fa-person"></i>
                 <span>Registration</span>
-            </a>
-            <a href="gallery.html" target="frm1">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" target="frm1">
                 <i class="fa-solid fa-camera"></i>
                 <span>Gallery</span>
-            </a>
-            <a href="blog.html" target="frm1">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html" target="frm1">
                 <i class="fa-solid fa-bell"></i>
                 <span>Blog</span>
-            </a>
-            <a href="help.html" target="frm1">
-                <i class="fa-solid fa-question"></i>
-                <span>Help</span>
-            </a>
-            <a href="contact.html" target="frm1">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html" target="frm1">
                 <i class="fa-solid fa-phone"></i>
-                <span>Contact</span>
-            </a>
-        </nav> -->
-        
-        <!-- <nav>
-            <a href="home.html" target="frm1">
-                <i class="fa-solid fa-house" title="Home"></i>
-                <span>Home</span>
-            </a>
-            <a href="courses.html" target="frm1">
+                <span>help</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="frm1">
                 <i class="fa-solid fa-book"></i>
-                <span>Courses</span>
-            </a>
-            
-            <a href="registration.html" target="frm1">
-                <i class="fa-solid fa-book"></i>
-                <span>Registration</span>
-            </a>
-            <a href="gallery.html" target="frm1">
-                <i class="fa-solid fa-camera"></i>
-                <span>Gallery</span>
-            </a>
-            <a href="blog.html" target="frm1">
-                <i class="fa-solid fa-bell"></i>
-                <span>Blog</span>
-            </a>
-            <a href="help.html" target="frm1">
-                <i class="fa-solid fa-question"></i>
-                <span>Help</span>
-            </a>
-            <a href="contact.html" target="frm1">
-                <i class="fa-solid fa-phone"></i>
                 <span>Contact</span>
-            </a>
-        </nav> -->
-        
-    </header>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 80vh; overflow: hidden;">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/bg.webp" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/images.jpeg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/images (1).jpeg" alt="Third slide">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    </nav>
+
+
+  </header>
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+    style="height: 10vh; margin-top: 10vh; overflow: hidden;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/carousal/bg.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/carousal/bg2.jpeg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/carousal/bg3.png" alt="Third slide">
+      </div>
+      <div class="carousel-item ">
+        <img class="d-block w-100" src="images/carousal/bg4.jpeg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/carousal/bg5.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/carousal/bg6.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="false"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <section>
+    <h1>Welcome to LVC!!!!!</h1>
+    <iframe class="embed-responsive-item" name="frm1" title="iframe" src="home.html"
+      style="height: 80vh;  width: 100%;  border: 0px solid #000;overflow: hidden;" id="contentframe"></iframe>
+  </section>
+
+
+  <aside class="d-flex flex-column  bd-highlight mb-3 bg-dark text-light justify-content-center"
+    style="width: 90%; margin-left: auto;margin-right: auto;">
+    <div class="courses">
+      <h1 style="text-align: center;">Most Important Course from the professional:</h1>
+
+    </div>
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+      <div class="card flex-fill mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/mern.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+        <div class="card-body">
+          <h5 class="card-title">Mern Stack</h5>
+          <p class="card-text">The MERN stack is a popular set of technologies used for building full-stack web
+            applications.</p>
+          <a href="mern.html" class="btn btn-primary" target="frm1">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card flex-fill mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/mean.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+        <div class="card-body">
+          <h5 class="card-title">Mean Stack</h5>
+          <p class="card-text">The MEAN stack is a popular technology stack used for building dynamic web applications.
+          </p>
+          <a href="mean.html" class="btn btn-primary" target="frm1">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card flex-fill mx-3" style="width: 18rem;">
+        <img class="card-img-top" src="images/gen.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
+        <div class="card-body">
+          <h5 class="card-title">Gen AI</h5>
+          <p class="card-text">Generative AI, is a subset of artificial intelligence that focuses on creating new
+            content. </p>
+          <a href="gen_ai.html" class="btn btn-primary center" target="frm1">Go somewhere</a>
+        </div>
+      </div>
+
     </div>
 
-    <section class="container mt-5 d-flex flex-column">
-        <div class="column">
-            <article class="col-12 text-center mb-4">
-                <h1>Welcome to LVC!!!!!</h1>
-            </article>
-        </div>
-        <div class="column">
-            <article class="col-12">
-                <iframe title="iframe" name="frm1" src="home.html" class="w-100" style="height: 80vh; width: 100%; border: 0px solid #000;"></iframe>
-            </article>
-        </div>
-    </section>
-    <!-- <section>
-        <article class="ar1">
-            <h1>Welcome to LVC!!!!!</h1>
-        </article>
-        <article class="ar2">
-            <iframe title="iframe" name="frm1" frameborder="1"></iframe>
-        </article>
-    </section> -->
-    <aside class="d-flex flex-column bd-highlight mb-3 bg-dark text-light">
-        <div class="courses">
-            <h1 style="text-align: center;">Most Important Course from the professional:</h1>
-            
-        </div>
-        <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/mern.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-                <div class="card-body">
-                  <h5 class="card-title">Mern Stack</h5>
-                  <p class="card-text">The MERN stack is a popular set of technologies used for building full-stack web applications.</p>
-                  <a href="mern.html" class="btn btn-primary" target="frm1">Go somewhere</a>
-                </div>
-              </div>
-            
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/mean.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-                <div class="card-body">
-                  <h5 class="card-title">Mean Stack</h5>
-                  <p class="card-text">The MEAN stack is a popular technology stack used for building dynamic web applications.</p>
-                  <a href="mean.html" class="btn btn-primary" target="frm1">Go somewhere</a>
-                </div>
-              </div>
-            
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/gen.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-                <div class="card-body">
-                  <h5 class="card-title">Gen AI</h5>
-                  <p class="card-text">Generative AI, is a subset of artificial intelligence that focuses on creating new content. </p>
-                  <a href="gen_ai.html" class="btn btn-primary center" target="frm1">Go somewhere</a>
-                </div>
-              </div>
-            
-        </div>
-    </aside>
 
-    <!-- Footer -->
-<footer class="text-center text-lg-start  text-muted bg-dark text-light">
+
+
+
+
+
+  </aside>
+
+  <footer class="text-center text-lg-start  text-muted bg-dark text-light">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-dark text-light">
       <!-- Left -->
@@ -269,7 +211,7 @@
         <span>Website Designed & Developed by Achyut Keshav</span>
       </div>
       <!-- Left -->
-  
+
       <!-- Right -->
       <div class="bg-dark text-light">
         <a href="" class="me-4 text-reset">
@@ -294,7 +236,7 @@
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
-  
+
     <!-- Section: Links  -->
     <section class="bg-dark text-light">
       <div class="container text-center text-md-start mt-5">
@@ -312,7 +254,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -333,7 +275,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -354,7 +296,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
@@ -373,7 +315,7 @@
       </div>
     </section>
     <!-- Section: Links  -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-4 bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
       © 2024 Copyright:
@@ -381,7 +323,6 @@
     </div>
     <!-- Copyright -->
   </footer>
-  <!-- Footer -->
-</body>
 
+</body>
 </html>
