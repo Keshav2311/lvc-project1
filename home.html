@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <style>
         
         body{
@@ -22,16 +24,11 @@
             margin-left: auto;
             margin-right: auto;
         }
-        p{
-            text-align: justify;
-            color: rgb(3, 3, 3);
-            width: 40%;
-            font-style:normal;
-        }
+        
         video{
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);            
             border-radius: 20px;
-            width: clamp(280px,60%,600px);
+            width: 80%;
             margin: 10px;
         }
 
@@ -47,17 +44,33 @@
 </head>
 <body>
     
-        <div class="home">
-        <video controls autoplay>
-            <source src="assets/i1.mp4" type="video/mp4">
-        </video>
-        <p class="lead">Live virtual classes are an innovative way to deliver education and training through the internet. They offer a real-time, interactive learning experience that can be accessed from anywhere in the world. <br>
-            Benefits: <br><br>
-            I. Real-Time Interaction: Students and teachers can communicate through video, audio, and chat, allowing for immediate feedback and engagement. <br><br>
-            II. Flexibility: Participants can join from any location, making it accessible for those who cannot attend in person. <br><br>
-            III. Interactive Tools: Many platforms offer features like screen sharing, virtual whiteboards, and breakout rooms to enhance learning. <br><br>
-            </p>
-    
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <video controls autoplay >
+                    <source src="assets/i1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <p>Live virtual classes are an innovative way to deliver education and training through the internet. They offer a real-time, interactive learning experience that can be accessed from anywhere in the world. <br>
+                    Benefits: <br><br>
+                    I. Real-Time Interaction: Students and teachers can communicate through video, audio, and chat, allowing for immediate feedback and engagement. <br><br>
+                    II. Flexibility: Participants can join from any location, making it accessible for those who cannot attend in person. <br><br>
+                    III. Interactive Tools: Many platforms offer features like screen sharing, virtual whiteboards, and breakout rooms to enhance learning. <br><br>
+                </p>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <p> IV. Cost-Effective: Reduces the need for travel and physical infrastructure, often making it a more affordable option for both institutions and students. <br><br>
+                    V. Resource Accessibility: Instructors can share digital resources, such as slides, videos, and documents, instantly with students. <br><br>
+                    VI. Recorded Sessions: Many LVC platforms allow sessions to be recorded, so students can review the material later if they miss a class or need to revisit the content. <br><br>
+                    LVCs have become increasingly popular, especially in the wake of the COVID-19 pandemic, as they offer a viable alternative to traditional classroom settings.
+                </p>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
 </html>

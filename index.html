@@ -5,17 +5,17 @@
   <title>Angular Training</title>
   <meta name="description" content="lvc website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-  <script type="text/javascript" src="engine1/jquery.js"></script>
-
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .carousel-item img {
       filter: blur(5px);
       filter: brightness(70%);
@@ -40,7 +40,6 @@
     h1 {
       text-align: center;
     }
-
   </style>
 
 </head>
@@ -86,7 +85,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html" target="frm1">
+              <a class="nav-link" href="galleerryyy.html" target="frm1">
                 <i class="fa-solid fa-camera"></i>
                 <span>Gallery</span>
               </a>
@@ -118,7 +117,7 @@
   </header>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
-    style="height: 10vh; margin-top: 10vh; overflow: hidden;">
+    style="height: 50vh; margin-top: 10vh; overflow: hidden; width: 100%;">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="images/carousal/bg.png" alt="First slide">
@@ -152,18 +151,17 @@
   <section>
     <h1>Welcome to LVC!!!!!</h1>
     <iframe class="embed-responsive-item" name="frm1" title="iframe" src="home.html"
-      style="height: 80vh;  width: 100%;  border: 0px solid #000;overflow: hidden;" id="contentframe"></iframe>
+      style="height: 100vh;  width: 90vw;  border: 0px solid #000;overflow: hidden;" id="contentframe"></iframe>
   </section>
 
 
-  <aside class="d-flex flex-column  bd-highlight mb-3 bg-dark text-light justify-content-center"
-    style="width: 90%; margin-left: auto;margin-right: auto;">
+  <aside class="d-flex flex-column  bd-highlight m-3 bg-dark text-light justify-content-center" style="width: 90%;">
     <div class="courses">
       <h1 style="text-align: center;">Most Important Course from the professional:</h1>
 
     </div>
-    <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
-      <div class="card flex-fill mx-3" style="width: 18rem;">
+    <div class="d-flex flex-column flex-md-row bd-highlight m-3 justify-content-center">
+      <div class="card flex-fill m-4">
         <img class="card-img-top" src="images/mern.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
         <div class="card-body">
           <h5 class="card-title">Mern Stack</h5>
@@ -173,7 +171,7 @@
         </div>
       </div>
 
-      <div class="card flex-fill mx-3" style="width: 18rem;">
+      <div class="card flex-fill m-4">
         <img class="card-img-top" src="images/mean.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
         <div class="card-body">
           <h5 class="card-title">Mean Stack</h5>
@@ -183,7 +181,7 @@
         </div>
       </div>
 
-      <div class="card flex-fill mx-3" style="width: 18rem;">
+      <div class="card flex-fill m-4">
         <img class="card-img-top" src="images/gen.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
         <div class="card-body">
           <h5 class="card-title">Gen AI</h5>
@@ -203,17 +201,13 @@
 
   </aside>
 
-  <footer class="text-center text-lg-start  text-muted bg-dark text-light">
-    <!-- Section: Social media -->
+  <footer class="text-center text-lg-start  text-muted bg-dark text-light" style="width: 100%;">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-dark text-light">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
+      <!-- <div class="me-5 d-none d-lg-block">
         <span>Website Designed & Developed by Achyut Keshav</span>
-      </div>
-      <!-- Left -->
+      </div> -->
 
-      <!-- Right -->
-      <div class="bg-dark text-light">
+      <div class="bg-dark text-light center d-flex column justify-content-center">
         <a href="" class="me-4 text-reset">
           <i class="fab fa-facebook-f"></i>
         </a>
@@ -246,7 +240,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <i class="fas fa-gem me-3"></i>Impelsys Pvt Ltd
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -318,11 +312,12 @@
 
     <!-- Copyright -->
     <div class="text-center p-4 bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
-      © 2024 Copyright:
-      <a class="text-reset fw-bold" href="https://keshav2311.github.io/lvc-project1/">lvc.com</a>
+      © 2024 Copyright: Achyut Keshav
+      <!-- <a class="text-reset fw-bold" href="https://keshav2311.github.io/lvc-project1/">lvc.com</a> -->
     </div>
     <!-- Copyright -->
   </footer>
 
 </body>
+
 </html>
