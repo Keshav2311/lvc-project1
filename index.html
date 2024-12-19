@@ -37,8 +37,14 @@
       user-select: none;
     }
 
+    
+    .navbar-nav {
+      margin-left: auto;
+    }
+  
     h1 {
       text-align: center;
+      font-weight: bold;
     }
     ::-webkit-scrollbar {
             width: 0px;
@@ -51,15 +57,18 @@
 
 
   <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:10vh;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 text-primary " style="height: 100%;">
-      <div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 text-primary">
+      <img src="images/logo.jpeg" alt="logo" style="height: 40px; width: 40px;">
+      <a class="navbar-brand" href="#">Impelsys</a>
+      <div class="container fluid justify-content-end">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
               <a class="nav-link" href="home.html" target="frm1">
                 <i class="fa-solid fa-house" title="home"></i>
@@ -68,15 +77,15 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fa-solid fa-book"></i>
                 <span class="">Courses</span>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-primary" href="mern.html" target="frm1">MERN</a>
-                <a class="dropdown-item text-primary" href="mean.html" target="frm1">MEAN</a>
-                <a class="dropdown-item text-primary" href="gen_ai.html" target="frm1">GEN AI</a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-secondary" href="mern.html" target="frm1">MERN</a>
+                <a class="dropdown-item text-secondary" href="mean.html" target="frm1">MEAN</a>
+                <a class="dropdown-item text-secondary" href="gen_ai.html" target="frm1">GEN AI</a>
                 <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a> -->
               </div>
@@ -125,7 +134,7 @@
 
   <aside class="d-flex flex-column  mb-1 p-2 bd-highlight bg-dark text-light justify-content-center" style="width: 96%;">
     <div class="courses">
-      <h1 style="text-align: center;">Most Important Course from the professional:</h1>
+      <h1>Most Important Course From The Professional :</h1>
 
     </div>
     <div class="d-flex flex-column flex-md-row bd-highlight m-3 justify-content-center">
