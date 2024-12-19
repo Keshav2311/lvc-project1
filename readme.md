@@ -20,6 +20,6 @@ Currently made with Vanila HTML, CSS and JS, it will soon be built with angular 
 - Navigation bar Courses update
 - proper display of homepage
 - validate and use forms
-- make contact page better
+- make contact page better. // Completed
 - make registration form better and responsive
 - style blogs and courses

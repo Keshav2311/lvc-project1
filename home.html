@@ -20,6 +20,21 @@
             margin-right: auto;
         }
 
+        h1{
+            text-align: center;
+            font-weight: bold;
+            color: rgb(70, 66, 66);
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+        .bounce {
+            animation: bounce 2s;
+        }
+        
+
         video {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             border-radius: 20px;
@@ -76,15 +91,15 @@
         </a>
     </div>
 
-
+    <h1 class="mt-2 bounce">Welcome to LVC</h1>
     <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-5 col-sm-12 mt-5 ml-3">
             <video controls autoplay>
                 <source src="assets/i1.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="col-md-6 col-sm-12" p-4>
-            <h1>Welcome to LVC</h1>
+        <div class="col-md-6 col-sm-12 mt-5 ml-3" p-4>
+            
             <p>Live virtual classes are an innovative way to deliver education and training through the internet. They
                 offer a real-time, interactive learning experience that can be accessed from anywhere in the world. <br>
                 Benefits: <br><br>
