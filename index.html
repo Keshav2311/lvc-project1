@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <style>
     body {
       display: flex;
@@ -37,18 +39,19 @@
       user-select: none;
     } */
 
-    
+
     .navbar-nav {
       margin-left: auto;
     }
-  
+
     h1 {
       text-align: center;
       font-weight: bold;
     }
+
     ::-webkit-scrollbar {
-            width: 0px;
-        }
+      width: 0px;
+    }
   </style>
 
 </head>
@@ -57,16 +60,18 @@
 
 
   <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:10vh;">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary">
-      <img src="images/logo.jpeg" alt="logo" style="height: 40px; width: 40px;">
-      <a class="navbar-brand" href="#">Impelsys</a>
-      <div class="container fluid justify-content-end">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary px-2">
+      <div class="logobox">
+        <img src="images/logo.jpeg" alt="logo" style="height: 40px; width: 40px; border-radius:50%;">
+        <a class="navbar-brand" href="#">LVC</a>
+      </div>
+      <div class="fluid justify-content-end">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+</div>
         <div class="collapse navbar-collapse text-primary justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
@@ -77,8 +82,8 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle-dark text-end" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle-dark text-end" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa-solid fa-book"></i>
                 <span class="">Courses</span>
               </a>
@@ -122,14 +127,14 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
 
   </header>
 
-  
-    <iframe class="embed-responsive-item" name="frm1" title="iframe" src="home.html" style="width: 100%; height:100vh; padding-top: 10vh;" id="contentframe"></iframe>
+
+  <iframe class="embed-responsive-item" name="frm1" title="iframe" src="home.html"
+    style="width: 100%; height:100vh; padding-top: 10vh;" id="contentframe"></iframe>
 
 
   <!-- <aside class="d-flex flex-column  mb-1 p-2 bd-highlight bg-dark text-light justify-content-center" style="width: 96%;">
