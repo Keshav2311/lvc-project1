@@ -1,70 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Section</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        img{
+            width: 30vw;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Help & Support</h2>
-        <div class="accordion" id="helpAccordion">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-link-custom text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Frequently Asked Questions (FAQ)
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#helpAccordion">
-                    <div class="card-body">
-                        <p><strong>Q1: How do I reset my password?</strong></p>
-                        <p>A: To reset your password, go to the login page and click on "Forgot Password". Follow the instructions to reset your password.</p>
-                        <p><strong>Q2: How can I contact support?</strong></p>
-                        <p>A: You can contact support by emailing support@example.com or calling 1-800-123-4567.</p>
-                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Let's get you</br> some help!</h1>
+                <h6>Have any issue? Send us an <span class="email-us">email.</span></h6>
+                <div class="img-wrapper">
+                    <img src="https://i.ibb.co/bWfN3Qy/undraw-onboarding-o8mv-1.png" alt="undraw-onboarding-o8mv-1">
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            User Guides
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#helpAccordion">
-                    <div class="card-body">
-                        <p>Our user guides provide detailed instructions on how to use our services. <a href="user-guide.pdf" target="_blank">Download the user guide</a>.</p>
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Help & Support</h2>
+                <div class="accordion" id="helpAccordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-link-custom text-dark" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Frequently Asked Questions (FAQ)
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#helpAccordion">
+                            <div class="card-body">
+                                <p><strong>Q1: How do I reset my password?</strong></p>
+                                <p>A: To reset your password, go to the login page and click on "Forgot Password".
+                                    Follow the instructions to reset your password.</p>
+                                <p><strong>Q2: How can I contact support?</strong></p>
+                                <p>A: You can contact support by emailing support@example.com or calling 1-800-123-4567.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Contact Us
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#helpAccordion">
-                    <div class="card-body">
-                        <p>If you need further assistance, please contact us:</p>
-                        <ul>
-                            <li>Email: keshav.a@impelsys.com</li>
-                            <li>Phone: 1-800-123-4567</li>
-                            <li>Address: Impelsys PVT LTD Bangalore</li>
-                        </ul>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    User Guides
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#helpAccordion">
+                            <div class="card-body">
+                                <p>Our user guides provide detailed instructions on how to use our services. <a
+                                        href="user-guide.pdf" target="_blank">Download the user guide</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Contact Us
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#helpAccordion">
+                            <div class="card-body">
+                                <p>If you need further assistance, please contact us:</p>
+                                <ul>
+                                    <li>Email: keshav.a@impelsys.com</li>
+                                    <li>Phone: 1-800-123-4567</li>
+                                    <li>Address: Impelsys PVT LTD Bangalore</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

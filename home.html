@@ -129,6 +129,139 @@
             left: auto;
             text-align: right;
         } */
+
+
+
+        /*mission vision section css*/
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+		html {
+        scroll-behavior: smooth;
+        }
+		
+		body{
+		margin:0;
+		font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		.title{
+		font-size:2em;
+		color:#8c0c60;
+		display:block;
+		}
+		
+		.sub-title{
+		font-size:0.8em;
+		color:gray;
+		display:block;
+		}
+		
+		.btn1{
+		padding:10px 20px;
+		background:transparent;
+		border:1px solid #8c0c3c;
+		color:#8c0c3c;
+		border-radius:3px;
+		outline:none;
+		transition:0.5s;
+		}
+		
+		.btn1:hover{
+		background:#8c0c3c;
+		color:#fff;
+		}
+		
+		.btn2{
+		padding:10px 20px;
+		border-radius:3px;
+		background:#1e1e1e;
+		border:1px solid #1e1e1e;
+		color:#fff;
+		outline:none;
+		transition:0.5s;
+		}
+		
+		.btn2:hover{
+		background:transparent;
+		color:#1e1e1e;
+		}
+		
+		.title:before{
+		content:" ";
+		font-family:"FontAwesome";
+		font-size:30px;
+		}
+		
+		a{
+		text-decoration:none;
+		}
+		
+		.section2,.section3{
+		width:90%;
+		margin:5% 0%;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
+		.section2 table,.section3 table{
+		width:100%;
+		}
+		
+		.section2 table td,.section3 table td{
+		width:50%;
+		}
+		
+		.section2 table td img,.section3 table td img{
+		width:80%;
+		height:70%;
+		margin-left:auto;
+		margin-right:auto;
+		box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+		}
+		
+		.section3 table td img{
+		float:right;
+		}
+		
+		
+		@media (max-width:720px){
+		.section2 table td, .section3 table td{
+		width:100%;
+		display:block;
+		}
+		.section3 table td img{
+		float:none;
+		margin-top:4%;
+		}
+		.section2 table td img,.section3 table td img{
+		width:100%;
+		height:60%;
+		}
+		}
+
+@media (max-width:300px){
+  .section2,.section3{
+    font-size:12px;
+  }
+  .section3 table td img{
+		float:none;
+		margin-top:8%;
+		}
+  .btn1,.btn2{
+    padding:5px 10px;
+  }
+}
+.footer{
+  position:fixed;
+  box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+  background:#1e1e1e;
+  padding:10px 20px;
+  color:gray;
+  font-size:13px;
+  position:fixed;
+  bottom:10px;
+  right:0;
+}
+        
     </style>
 </head>
 
@@ -139,7 +272,7 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/carousal/c3.webp" alt="First slide">
                 <div class="carousel-caption d-none d-md-block first-caption">
-                    <h3>Live Virtual Class</h3>
+                    <h1>Live Virtual Class</h1>
                     <p>Join our live virtual class to learn, interact, and grow from anywhere in the world!</p>
                     <div>
                         <button class="text-dark btn btn-secondary" onclick="">Register</button>
@@ -204,6 +337,46 @@
             </p>
         </div>
     </div>
+
+    <section class="section2" id="AboutUs">
+		<table>
+		<tr>
+		<td>
+		<img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="AboutUs">
+		</td>
+		<td>
+		<span class="title">About Us</span>
+		<span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a href="#OurMission" class="btn1">Our Misssion</a> <a href="" class="btn2">Know More</a>
+		</td>
+		</tr>
+		</table>
+		</section>
+		
+		<section class="section3" id="OurMission">
+		<table>
+		<tr>
+		<td>
+		<span class="title">Our Mission</span>
+		<span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a href="" class="btn2">Know More</a>
+		</td>
+		<td>
+		<img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="AboutUs">
+		</td>
+		</tr>
+		</table>
+		</section>
+
+
+<div class="footer">
+Credits: Unsplash  
+</div>
+
     <aside class="d-flex flex-column mb-1 p-2 bd-highlight bg-dark text-light justify-content-center" style="width: 100%;">
         <div class="courses">
           <h1 class="text-light">Most Important Course From The Professional :</h1>

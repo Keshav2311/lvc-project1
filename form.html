@@ -20,7 +20,7 @@
       height: 100vh;
     }
     .formulation {
-      height: 50vh;
+      height: 60vh;
       width: 80%;
       border-radius: 10px;
       background-color: rgb(238, 243, 241);
@@ -47,9 +47,27 @@
                 var computerInteger = parseInt(computer, 10);
 
                 var total = mathsInteger + englishInteger + computerInteger;
-                var percentage = total / 3
+                var percentage = total / 3;
 
-                alert("Hi " + name+ "\nYour Total Marks is: "+total+"\nYour Total Percentage is: "+percentage);
+                var max_marks = mathsInteger;
+                var sub = "Maths";
+
+                // alert("Hi " + name+ "\nYour Total Marks is: "+total+"\nYour Total Percentage is: "+percentage+"\nYou have got Maximum Marks in: "+sub+"\n And the marks is: "+max_marks);
+
+              
+                if(mathsInteger < englishInteger && computerInteger < englishInteger){
+                  sub = "English";
+                  max_marks = englishInteger
+                }
+                else if(englishInteger < mathsInteger && computerInteger < mathsInteger){
+                  sub = "Maths";
+                  max_marks = mathsInteger;
+                }
+                else{
+                  sub = "Computer";
+                  max_marks = computerInteger;
+                }
+                alert("Hi " + name+ "\nYour Total Marks is: "+total+"\nYour Total Percentage is: "+percentage+"\nYou have got Maximum Marks in: "+sub+"\n And the marks is: "+max_marks);
 
             }
         
