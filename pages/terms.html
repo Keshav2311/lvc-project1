@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.terms {
+  margin: 20px 0;
+}
+
+.terms p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Terms and Conditions</h1>
+    <div class="terms">
+      <p>1. You must provide accurate and complete information during the application process.</p>
+      <p>2. You agree to abide by all the rules and regulations of the course provider.</p>
+      <p>3. The course fees must be paid in full before the commencement of the course.</p>
+      <p>4. Any form of plagiarism or cheating will result in immediate disqualification.</p>
+      <p>5. The course provider reserves the right to modify the course content and schedule.</p>
+      <p>6. Refunds will only be provided as per the refund policy of the course provider.</p>
+      <p>7. You are responsible for maintaining the confidentiality of your login credentials.</p>
+    </div>
+    <button id="agreeButton">I Agree</button>
+  </div>
+  <script>
+        document.getElementById('agreeButton').addEventListener('click', function() {
+            window.location.href = 'form.html';
+        });
+  </script>
+</body>
+</html>

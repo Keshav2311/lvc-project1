@@ -13,10 +13,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="js/validate.js"></script>
+    <script src="../js/validate.js"></script>
   <style>
 
     .hello{
+      margin-top: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -30,17 +31,12 @@
       margin-top: 20px;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
-
-    button {
-      text-align: center;
-      align-items: center;
-    }
   </style>
 </head>
 
 <body>
   <div class="hello">
-  <form class="formulation" method="" action="thanks.html" onsubmit="return vlad()" target="_self">
+  <form class="formulation" action="../pages/thanks.html" onsubmit="return vlad()" target="_self">
     
     <h1 class="h1 text-dark text-center">Registration Form<i class="fa-solid fa-scroll ml-3"></i></h1>
     
@@ -88,7 +84,7 @@
         <textarea class="form-control mt-2" id="remarks" rows="3"></textarea>
       </div>
       <div class="container d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary mt-3">SAVE</button>
+        <input type="submit" class="btn btn-primary mt-3" value="SAVE">
       </div>
     </div>
   </form></div>
