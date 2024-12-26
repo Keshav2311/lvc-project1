@@ -19,12 +19,12 @@ function vlad() {
 
     }
     else if (email == "") {
-        alert("Please enter a valid Email")
+        alert("Please enter a valid Email");
         return false;
     }
 
     else if (selectedGender == "") {
-        alert("Please enter gender")
+        alert("Please enter gender");
         return false;
     }
 
@@ -48,12 +48,12 @@ function vladan(){
 
 
     if (firstName == "") {
-        alert("Please enter the name");
+        alert("Please enter the first name");
         return false;
 
     }
     else if (lastName == "") {
-        alert("Please enter a valid Email");
+        alert("Please enter a valid last name");
         return false;
     }
 
