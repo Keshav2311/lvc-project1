@@ -163,6 +163,8 @@
 
         <script>
           var selectedValue = 0;
+
+          
            
                 function scoreCard(){
                   console.log("hello");
@@ -237,7 +239,12 @@
                     });
 
                     function condition(){
-                      window.open("terms.html");
+                      let sval = JSON.parse(localStorage.getItem("agree")|| false);
+                      if(!sval){
+                        
+                        window.open('terms.html','condition', 'width=1000px, height=700px');
+
+                      }
                     }
 
             

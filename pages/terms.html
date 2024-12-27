@@ -66,8 +66,12 @@ button:hover {
   </div>
   <script>
         document.getElementById('agreeButton').addEventListener('click', function() {
-            window.location.href = 'form.html';
-        });
+          localStorage.setItem("agree","true");
+          alert("Thank You for Agreeing");
+          window.close();
+    // window.location.href = 'form.html';
+    
+});
   </script>
 </body>
 </html>
