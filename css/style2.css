@@ -1,73 +1,266 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(70, 66, 66);
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s;
+}
+
+
+video {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 80%;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media screen and (max-width:800px) {
+    .home {
+        flex-direction: column;
+    }
+
+    p {
+        width: 80%;
+    }
+}
+
+.first-caption {
+    top: 20%;
+    right: 20;
+}
+
+.first-caption h1 {
+    font-weight: bolder;
+    color: black;
+}
+
+.first-caption button {
+    align-items: center;
+}
+
+.first-caption p {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.second-caption {
+    top: 20%;
+    right: 20;
+}
+
+.second-caption h1 {
+    color: black;
+    font-weight: bolder;
+}
+
+.second-caption p {
+    font-weight: bold;
+    color: black;
+}
+
+.second-caption button {
+    align-items: center;
+}
+
+.third-caption {
+    top: 20%;
+    right: 80;
+}
+
+.third-caption h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: #070606;
+}
+
+.third-caption button {
+    color: rgb(250, 250, 247);
+    background-color: rgb(214, 199, 199)
+}
+
+/*mission vision section css*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-header.form {
-    background-color: #758575;
-    color: white;
-    padding: 150px 10px 10px;
-    text-align: center;
-    font-size: large;
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
+.title {
+    font-size: 2em;
+    color: #8c0c60;
+    display: block;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
+.sub-title {
+    font-size: 0.8em;
+    color: gray;
+    display: block;
 }
 
-article {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.btn1 {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #8c0c3c;
+    color: #8c0c3c;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btn1:hover {
+    background: #8c0c3c;
+    color: #fff;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btn2:hover {
+    background: transparent;
+    color: #1e1e1e;
+}
+
+.title:before {
+    content: " ";
+    font-family: "FontAwesome";
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section2,
+.section3 {
     width: 90%;
-    max-width: 400px;
+    margin: 5% 0%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-form.regie {
-    display: flex;
-    flex-direction: column;
-}
-
-form.regie input[type="text"],
-form.regie input[type="email"],
-form.regie select {
-    padding: 10px;
-    margin-right: 30px;
-    /* margin-left: 10px; */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.section2 table,
+.section3 table {
     width: 100%;
 }
 
-form.regie input[type="radio"],
-form.regie input[type="checkbox"] {
-    margin-right: 10px;
+.section2 table td,
+.section3 table td {
+    width: 50%;
 }
 
-form.regie input[type="radio"] + label,
-form.regie input[type="checkbox"] + label {
-    margin-right: 20px;
+.section2 table td img,
+.section3 table td img {
+    width: 80%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
 }
 
-@media (max-width: 600px) {
-    article {
+.section3 table td img {
+    float: right;
+}
+
+
+@media (max-width:720px) {
+
+    .section2 table td,
+    .section3 table td {
         width: 100%;
-        padding: 10px;
+        display: block;
     }
 
-    form.regie input[type="text"],
-    form.regie input[type="email"],
-    form.regie select {
-        margin: 5px 0;
+    .section3 table td img {
+        float: none;
+        margin-top: 4%;
     }
+
+    .section2 table td img,
+    .section3 table td img {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media (max-width:300px) {
+
+    .section2,
+    .section3 {
+        font-size: 12px;
+    }
+
+    .section3 table td img {
+        float: none;
+        margin-top: 8%;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 5px 10px;
+    }
+}
+
+.footer {
+    position: fixed;
+    box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
+    background: #1e1e1e;
+    padding: 10px 20px;
+    color: gray;
+    font-size: 13px;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
 }

@@ -5,240 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <style>
-        .home {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-        p{
-            text-align: justify;
-        }
-        h1{
-            text-align: center;
-            font-weight: bold;
-            color: rgb(70, 66, 66);
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-30px); }
-            60% { transform: translateY(-15px); }
-        }
-        .bounce {
-            animation: bounce 2s;
-        }
-        
-
-        video {
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            width: 80%;
-            margin: 10px;
-        }
-
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
-
-        @media screen and (max-width:800px) {
-            .home {
-                flex-direction: column;
-            }
-
-            p {
-                width: 80%;
-            }
-        }
-
-        .first-caption {
-            top: 20%;
-            right: 20;
-            left: auto;
-            text-align: right;
-            color: black;
-            font-weight: bolder;
-        }
-        .first-caption p{
-            font-weight: bold;
-        }
-
-        .second-caption {
-            top: 20%;
-            right: 20;
-            left: auto;
-            text-align: right;
-            color: rgb(7, 7, 7);
-            font-weight: bolder;
-        }
-        .second-caption p{
-            
-            font-weight: bold;
-            
-        }
-
-        .third-caption {
-            top: 20%;
-            right: 0;
-            left: auto;
-            text-align: center;
-            color: rgb(253, 252, 252);
-            font-weight: bolder;
-        }
-        .third-caption h1{
-            color: #fff;
-        }
-        .third-caption p{
-            font-weight: bold;
-        }
-        .third-caption button{
-            color: rgb(250, 250, 247);
-            background-color: rgb(214, 199, 199)
-        }
-
-        /*mission vision section css*/
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-		html {
-        scroll-behavior: smooth;
-        }
-		
-		body{
-		margin:0;
-		font-family: 'Source Sans Pro', sans-serif;
-		}
-		
-		.title{
-		font-size:2em;
-		color:#8c0c60;
-		display:block;
-		}
-		
-		.sub-title{
-		font-size:0.8em;
-		color:gray;
-		display:block;
-		}
-		
-		.btn1{
-		padding:10px 20px;
-		background:transparent;
-		border:1px solid #8c0c3c;
-		color:#8c0c3c;
-		border-radius:3px;
-		outline:none;
-		transition:0.5s;
-		}
-		
-		.btn1:hover{
-		background:#8c0c3c;
-		color:#fff;
-		}
-		
-		.btn2{
-		padding:10px 20px;
-		border-radius:3px;
-		background:#1e1e1e;
-		border:1px solid #1e1e1e;
-		color:#fff;
-		outline:none;
-		transition:0.5s;
-		}
-		
-		.btn2:hover{
-		background:transparent;
-		color:#1e1e1e;
-		}
-		
-		.title:before{
-		content:" ";
-		font-family:"FontAwesome";
-		font-size:30px;
-		}
-		
-		a{
-		text-decoration:none;
-		}
-		
-		.section2,.section3{
-		width:90%;
-		margin:5% 0%;
-		margin-left:auto;
-		margin-right:auto;
-		}
-		
-		.section2 table,.section3 table{
-		width:100%;
-		}
-		
-		.section2 table td,.section3 table td{
-		width:50%;
-		}
-		
-		.section2 table td img,.section3 table td img{
-		width:80%;
-		height:70%;
-		margin-left:auto;
-		margin-right:auto;
-		box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
-		}
-		
-		.section3 table td img{
-		float:right;
-		}
-		
-		
-		@media (max-width:720px){
-		.section2 table td, .section3 table td{
-		width:100%;
-		display:block;
-		}
-		.section3 table td img{
-		float:none;
-		margin-top:4%;
-		}
-		.section2 table td img,.section3 table td img{
-		width:100%;
-		height:60%;
-		}
-		}
-
-@media (max-width:300px){
-  .section2,.section3{
-    font-size:12px;
-  }
-  .section3 table td img{
-		float:none;
-		margin-top:8%;
-		}
-  .btn1,.btn2{
-    padding:5px 10px;
-  }
-}
-.footer{
-  position:fixed;
-  box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
-  background:#1e1e1e;
-  padding:10px 20px;
-  color:gray;
-  font-size:13px;
-  position:fixed;
-  bottom:10px;
-  right:0;
-}
-        
-    </style>
 </head>
 
 <body>
@@ -259,7 +34,11 @@
                 <img class="d-block w-100" src="../images/carousal/c5.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block second-caption">
                     <h1>Interactive Online Learning Session</h1>
-                    <p class="text-center">Experience the future of learning with our engaging live virtual classes—connect, collaborate, and succeed from anywhere!</p> 
+                    <p class="text-center">Experience the future of learning with our engaging live virtual
+                        classes—connect, collaborate, and succeed from anywhere!</p>
+                    <div>
+                        <button class="text-dark btn btn-secondary" onclick="open_contact()">Contact Us</button>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
@@ -271,8 +50,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="false"></span>
@@ -292,7 +71,7 @@
             </video>
         </div>
         <div class="col-md-5 col-sm-12 mt-5 ml-3" p-4>
-            
+
             <p>Live virtual classes are an innovative way to deliver education and training through the internet. They
                 offer a real-time, interactive learning experience that can be accessed from anywhere in the world. <br>
                 Benefits: <br>
@@ -307,95 +86,116 @@
     </div>
 
     <section class="section2" id="AboutUs">
-		<table>
-		<tr>
-		<td>
-		<img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="AboutUs">
-		</td>
-		<td>
-		<span class="title">About Us</span>
-		<span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<a href="#OurMission" class="btn1">Our Misssion</a> <a href="" class="btn2">Know More</a>
-		</td>
-		</tr>
-		</table>
-		</section>
-		
-		<section class="section3" id="OurMission">
-		<table>
-		<tr>
-		<td>
-		<span class="title">Our Mission</span>
-		<span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		<a href="" class="btn2">Know More</a>
-		</td>
-		<td>
-		<img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="AboutUs">
-		</td>
-		</tr>
-		</table>
-		</section>
+        <table>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                        alt="AboutUs">
+                </td>
+                <td>
+                    <span class="title">About Us</span>
+                    <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <a href="#OurMission" class="btn1">Our Misssion</a> <a href="" class="btn2">Know More</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="section3" id="OurMission">
+        <table>
+            <tr>
+                <td>
+                    <span class="title">Our Mission</span>
+                    <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adi</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <a href="" class="btn2">Know More</a>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1499083097717-a156f85f0516?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                        alt="AboutUs">
+                </td>
+            </tr>
+        </table>
+    </section>
 
 
-<div class="footer">
-Credits: Unsplash  
-</div>
+    <div class="footer">
+        Credits: Unsplash
+    </div>
 
-    <aside class="d-flex flex-column mb-1 p-2 bd-highlight bg-dark text-light justify-content-center" style="width: 100%;">
+    <aside class="d-flex flex-column mb-1 p-2 bd-highlight bg-dark text-light justify-content-center"
+        style="width: 100%;">
         <div class="courses">
-          <h1 class="text-light">Most Important Course From The Professional :</h1>
-    
+            <h1 class="text-light">Most Important Course From The Professional :</h1>
+
         </div>
         <div class="d-flex flex-column flex-md-row bd-highlight m-3 justify-content-center">
-          <div class="card flex-fill m-4">
-            <img class="card-img-top" src="../images/mern.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Mern Stack</h5>
-              <p class="card-text text-dark">The MERN stack is a popular set of technologies used for building full-stack web
-                applications.</p>
-              <a href="../courses/mern.html" class="btn btn-primary" target="frm1">Go somewhere</a>
+            <div class="card flex-fill m-4">
+                <img class="card-img-top" src="../images/mern.webp" alt="Card image cap"
+                    style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Mern Stack</h5>
+                    <p class="card-text text-dark">The MERN stack is a popular set of technologies used for building
+                        full-stack web
+                        applications.</p>
+                    <a href="../courses/mern.html" class="btn btn-primary" target="frm1">Find Here...</a>
+                </div>
             </div>
-          </div>
-    
-          <div class="card flex-fill m-4">
-            <img class="card-img-top" src="../images/mean.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Mean Stack</h5>
-              <p class="card-text text-dark">The MEAN stack is a popular technology stack used for building dynamic web applications.
-              </p>
-              <a href="../courses/mean.html" class="btn btn-primary" target="frm1">Go somewhere</a>
-            </div>
-          </div>
-    
-          <div class="card flex-fill m-4">
-            <img class="card-img-top" src="../images/gen.webp" alt="Card image cap" style="height: 10rem; aspect-ratio: 1/1;">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Gen AI</h5>
-              <p class="card-text text-dark">Generative AI, is a subset of artificial intelligence that focuses on creating new
-                content. </p>
-              <a href="../courses/gen_ai.html" class="btn btn-primary center" target="frm1">Go somewhere</a>
-            </div>
-          </div>
-    
-        </div>
-      </aside>
 
-      <script>
-        
+            <div class="card flex-fill m-4">
+                <img class="card-img-top" src="../images/mean.webp" alt="Card image cap"
+                    style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Mean Stack</h5>
+                    <p class="card-text text-dark">The MEAN stack is a popular technology stack used for building
+                        dynamic web applications.
+                    </p>
+                    <a href="../courses/mean.html" class="btn btn-primary" target="frm1">Find Here...</a>
+                </div>
+            </div>
+
+            <div class="card flex-fill m-4">
+                <img class="card-img-top" src="../images/gen.webp" alt="Card image cap"
+                    style="height: 10rem; aspect-ratio: 1/1;">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Gen AI</h5>
+                    <p class="card-text text-dark">Generative AI, is a subset of artificial intelligence that focuses on
+                        creating new
+                        content. </p>
+                    <a href="../courses/gen_ai.html" class="btn btn-primary center" target="frm1">Find Here...</a>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+    <script>
+
         function open_register() {
             window.location.href = '../pages/registration.html';
         }
 
-        function exam(){
+        function exam() {
             window.location.href = '../others/tteesstt.html';
         }
-        
-      </script>
-    
+
+        function open_contact() {
+            window.location.href = '../pages/contact.html';
+        }
+
+    </script>
+
 </body>
 
 </html>
