@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Exam Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(250, 247, 247);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(2, 2, 2);
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: block;
+            margin: 20px auto;
+        }
+        .correct {
+            color: rgb(15, 126, 15);
+        }
+        .incorrect {
+            color: lightcoral;
+        }
+    </style>
+    <script>
+        const questions = [
+            {
+                question: "What is the capital of France?",
+                options: ["Paris", "London", "Rome", "Berlin"],
+                correctAnswer: "a"
+            },
+            {
+                question: "Full Form of HTML?",
+                options: ["Hypertext Measure Language", "Hypertext Markup Language", "Higher Move Language", "Hyper Most Language"],
+                correctAnswer: "b"
+            },
+            {
+                question: "What is the boiling point of water?",
+                options: ["90°C", "80°C", "100°C", "110°C"],
+                correctAnswer: "c"
+            },
+            {
+                question: "For responsiveness what to use?",
+                options: ["lightbox", "Table", "Measurement", "Media Queries"],
+                correctAnswer: "d"
+            },
+            {
+                question: "MEAN Stack includes?",
+                options: ["Angular", "React", "Vanilla", "PHP"],
+                correctAnswer: "a"
+            }
+        ];
+
+        function generateExam() {
+            const examContainer = document.getElementById('examContainer');
+            examContainer.innerHTML = '';
+
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+                questionDiv.innerHTML = `
+                    <p>${index + 1}. ${q.question}</p>
+                    ${q.options.map((option, i) => `
+                        <label><input type="radio" name="q${index + 1}" value="${String.fromCharCode(97 + i)}"> ${option}</label><br>
+                    `).join('')}
+                `;
+                examContainer.appendChild(questionDiv);
+            });
+        }
+
+        function calculateMarks() {
+            let totalMarks = 0;
+
+            questions.forEach((q, index) => {
+                const userAnswer = document.querySelector(`input[name="q${index + 1}"]:checked`);
+                const correctAnswer = q.correctAnswer;
+                const options = document.querySelectorAll(`input[name="q${index + 1}"]`);
+
+                options.forEach(option => {
+                    if (option.value === correctAnswer) {
+                        option.parentElement.classList.add('correct');
+                    } else if (userAnswer && option.value === userAnswer.value) {
+                        option.parentElement.classList.add('incorrect');
+                    }
+                });
+
+                if (userAnswer && userAnswer.value === correctAnswer) {
+                    totalMarks += 2;
+                }
+            });
+
+            alert(`Your total marks are: ${totalMarks}`);
+        }
+
+        window.onload = generateExam;
+    </script>
+</head>
+<body>
+    <h1>Dynamic Exam Page</h1>
+    <form id="examContainer"></form>
+    <button type="button" class="btn btn-primary" onclick="calculateMarks()">Generate Marks</button>
+</body>
+</html>

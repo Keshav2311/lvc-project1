@@ -76,61 +76,37 @@
         }
 
         .second-caption {
-            bottom: 20%;
-            /* right: 10%; */
-            text-align: center;
+            top: 20%;
+            right: 20;
+            left: auto;
+            text-align: right;
             color: rgb(7, 7, 7);
             font-weight: bolder;
         }
         .second-caption p{
-            color: rgb(248, 250, 247);
+            
             font-weight: bold;
-            background-color: rgb(27, 23, 1);
+            
         }
 
         .third-caption {
-            top: 40%;
-            color: black;
-            font-weight: bolder;
-            /* left: auto;
-            right: auto; */
-            /* transform: translate(-50%, -50%); */
+            top: 20%;
+            right: 0;
+            left: auto;
             text-align: center;
+            color: rgb(253, 252, 252);
+            font-weight: bolder;
+        }
+        .third-caption h1{
+            color: #fff;
         }
         .third-caption p{
-            text-align: center;
-            color: black;
             font-weight: bold;
-            background-color: aliceblue;
         }
         .third-caption button{
-            color: antiquewhite;
+            color: rgb(250, 250, 247);
+            background-color: rgb(214, 199, 199)
         }
-
-        .fourth-caption {
-            bottom: 10%;
-            color: rgb(196, 216, 226);
-            /* left: 20%; */
-            right: 100;
-            font-weight: bolder;
-            /* transform: translateX(-50%); */
-            text-align: center;
-        }
-        .fourth-caption p{
-            font-weight: bold;
-            background-color: black;
-
-        }
-        /* .carousel-caption {
-            right: 20;
-            vertical-align:top;
-            /* top: 40;
-            bottom: 60; 
-            left: auto;
-            text-align: right;
-        } */
-
-
 
         /*mission vision section css*/
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
@@ -268,42 +244,34 @@
 <body>
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 60vh;">
             <div class="carousel-item active">
                 <img class="w-100" src="../images/carousal/c3.webp" alt="First slide">
                 <div class="carousel-caption d-none d-md-block first-caption">
                     <h1>Live Virtual Class</h1>
                     <p>Join our live virtual class to learn, interact, and grow from anywhere in the world!</p>
                     <div>
-                        <button class="text-dark btn btn-secondary" onclick="">Register</button>
+                        <button class="text-dark btn btn-secondary" onclick="open_register()">Register</button>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../images/carousal/c2.webp" alt="Second slide">
+                <img class="d-block w-100" src="../images/carousal/c5.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block second-caption">
-                    <h4>Interactive Online Learning Session</h4>
+                    <h1>Interactive Online Learning Session</h1>
                     <p class="text-center">Experience the future of learning with our engaging live virtual classes—connect, collaborate, and succeed from anywhere!</p> 
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../images/carousal/c4.webp" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block third-caption">
-                    <h3>Real-Time Online Learning Experience</h3>
-                    <p>Unlock your potential with our dynamic live virtual classes—learn, engage, and excel from the comfort of your home!</p>
+                <img class="d-block w-100" src="../images/carousal/c6.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block third-caption m-3">
+                    <h1>Real-Time Online Learning Experience</h1>
                     <div>
-                        <button class="text-dark btn btn-secondary" onclick="">Contact Us</button>
+                        <button class="text-dark btn" onclick="exam()">Entrance Exam</button>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <img class="d-block w-100" src="../images/carousal/c1.webp" alt="Fourth slide">
-                <div class="carousel-caption d-none d-md-block fourth-caption">
-                    <h3>Virtual Interactive Classroom</h3>
-                    <p class="text-center">Transform your learning journey with our immersive live virtual classes—connect, learn, and thrive from anywhere!</p>
-                    
-                </div>
-            </div>
+            
             
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -414,14 +382,19 @@ Credits: Unsplash
           </div>
     
         </div>
-    
-    
-    
-    
-    
-    
-    
       </aside>
+
+      <script>
+        
+        function open_register() {
+            window.location.href = '../pages/registration.html';
+        }
+
+        function exam(){
+            window.location.href = '../others/tteesstt.html';
+        }
+        
+      </script>
     
 </body>
 
