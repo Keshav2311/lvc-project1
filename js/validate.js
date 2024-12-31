@@ -1,17 +1,23 @@
 function vlad() {
+
     var name = document.getElementById("nameInput").value;
-    // console.log(name);
     var email = document.getElementById("emailInput").value;
-    // console.log(email);
-    var selectedGender = document.querySelector('input[name="gender"]:checked').value;
-    // console.log(selectedGender);
-    // var selectedHobbies[] = document.querySelector('input[name="hobbies"]:checked').value;
-    // console.log(selectedHobbies);
+    const genderRadios = document.getElementsByName('gender');
+    let selectedGender = 0;
 
+    for (const radio of genderRadios) {
+        if (radio.checked) {
+          selectedGender = radio.value;
+          break;
+        }
+    }
 
+    console.log(selectedGender);
+    
 
-    // var gender = document.getElementsByName("gender").value;
-    // console.log(gender);
+    // return false;
+
+    
 
     if (name == "") {
         alert("Please enter the name");

@@ -78,19 +78,19 @@
 <body>
   <div class="background"></div>
   <div class="hello">
-    <form class="formulation" action="../pages/thanks.html" onsubmit="return vlad()" target="_self">
+    <form class="formulation" action="../pages/thanks.html" onsubmit="return vlad()" target="_self" id="form">
       <div class="container">
         <h1 class="h1 text-dark text-center">Registration Form<i class="fa-solid fa-scroll ml-3"></i></h1>
         <div class="form-group">
           <label for="nameInput">Name</label>
-          <input type="text" class="form-control mt-2" id="nameInput" placeholder="abc" required>
+          <input type="text" class="form-control mt-2" id="nameInput" placeholder="abc">
         </div>
         <div class="form-group mt-3">
           <label for="emailInput">Email</label>
-          <input type="email" class="form-control mt-2" id="emailInput" placeholder="xyz@gmail.com" required>
+          <input type="email" class="form-control mt-2" id="emailInput" placeholder="xyz@gmail.com">
         </div>
         <div class="form-group mt-3" name="gender">
-          <label>Gender:</label>
+          <label for="gender">Gender:</label>
           <div class="form-check form-check-inline ml-2">
             <input class="form-check-input ml-2" type="radio" name="gender" id="male" value="male">
             <label class="form-check-label" for="male">Male</label>
