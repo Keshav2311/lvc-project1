@@ -21,6 +21,7 @@ function vlad() {
 
     if (name == "") {
         alert("Please enter the name");
+
         return false;
 
     }
