@@ -7,79 +7,116 @@
     <title>Help Section</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/help.css">
+    <style>
+        input,
+        select {
+            padding: 4px;
+            padding-left: 8px;
+            font-size: 120%;
+            margin: 1px;
+            border-radius: 5px;
+            border-width: 0px;
+            background-color: rgba(0, 69, 129, 0.432);
+            width: 80%;
+        }
+        .bg {
+    backdrop-filter: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/download.webp');
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: -1;
+  }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mt-3">
-                <h1 class="bolder">Let's get you</br> some help!</h1>
-                <h6>Have any issue? Send us an <span class="email-us">email.</span></h6>
-                <div class="img-wrapper">
-                    <img src="https://i.ibb.co/bWfN3Qy/undraw-onboarding-o8mv-1.png" alt="undraw-onboarding-o8mv-1">
+    <div class="row mt-5 d-flex  align-items-center">
+        <div class="col-md-6" style="background-image: url('https://i.ibb.co/bWfN3Qy/undraw-onboarding-o8mv-1.png'); background-size: cover; height: 60vh;">
+            <form class="d-flex  align-items-center flex-column" name="search_form">
+                <h1 class="text-center"> Search more about our company:</h1>
+                <select class="site" name="site" size="1" class="col-sm-5">
+                    <option value="http://search.yahoo.com/bin/search?p=">Yahoo</option>
+                    <option value="http://www.go.com/Titles?qt=">Go.com</option>
+                    <option value="http://www.goto.com/d/search/?Keywords=">GoTo.com</option>
+                    <option value="http://search.excite.com/search.gw?search=">Excite</option>
+                    <option value="http://www.lycos.com/srch/?query=">Lycos</option>
+                    <option value="http://hotbot.lycos.com/?MT=">HotBot</option>
+                    <option value="http://www.altavista.com/cgi-bin/query?&q=">Alta Vista</option>
+                    <option value="http://www.webcrawler.com/cgi-bin/WebQuery?searchText=">WebCrawler</option>
+                    <option value="http://www.mamma.com/Mamma?&query=">Mamma.com</option>
+                    <option value="http://search.aol.com/dirsearch.adp?query=">AOL.com</option>
+                    <option value="http://search.msn.com/results.asp?q=">MSN.com</option>
+                </select><br>
+                <input type="button" class="btn search_btn btn-secondary p-1 m-1 col-8 col-sm-3" value="Search"
+                    onClick="JavaScript:search_site()">
+            </form>
+        </div>
+        <div class="col-md-5 d-flex  align-items-center flex-column">
+            <h2 class="text-center mb-2 bolder">Help & Support</h2>
+            <div class="accordion" id="helpAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-link-custom text-dark" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Frequently Asked Questions (FAQ)
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#helpAccordion">
+                        <div class="card-body">
+                            <p><strong>Q1: How do I reset my password?</strong></p>
+                            <p>A: To reset your password, go to the login page and click on "Forgot Password".
+                                Follow the instructions to reset your password.</p>
+                            <p><strong>Q2: How can I contact support?</strong></p>
+                            <p>A: You can contact support by emailing support@example.com or calling 1-800-123-4567.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 mt-3">
-                <h2 class="text-center mb-4 bolder">Help & Support</h2>
-                <div class="accordion" id="helpAccordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-link-custom text-dark" type="button"
-                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Frequently Asked Questions (FAQ)
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#helpAccordion">
-                            <div class="card-body">
-                                <p><strong>Q1: How do I reset my password?</strong></p>
-                                <p>A: To reset your password, go to the login page and click on "Forgot Password".
-                                    Follow the instructions to reset your password.</p>
-                                <p><strong>Q2: How can I contact support?</strong></p>
-                                <p>A: You can contact support by emailing support@example.com or calling 1-800-123-4567.
-                                </p>
-                            </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                User Guides
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#helpAccordion">
+                        <div class="card-body">
+                            <p>Our user guides provide detailed instructions on how to use our services. <a
+                                    href="user-guide.pdf" target="_blank">Download the user guide</a>.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    User Guides
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#helpAccordion">
-                            <div class="card-body">
-                                <p>Our user guides provide detailed instructions on how to use our services. <a
-                                        href="user-guide.pdf" target="_blank">Download the user guide</a>.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Contact Us
+                            </button>
+                        </h2>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Contact Us
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#helpAccordion">
-                            <div class="card-body">
-                                <p>If you need further assistance, please contact us:</p>
-                                <ul>
-                                    <li>Email: keshav.a@impelsys.com</li>
-                                    <li>Phone: 1-800-123-4567</li>
-                                    <li>Address: Impelsys PVT LTD Bangalore</li>
-                                </ul>
-                            </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#helpAccordion">
+                        <div class="card-body">
+                            <p>If you need further assistance, please contact us:</p>
+                            <ul>
+                                <li>Email: keshav.a@impelsys.com</li>
+                                <li>Phone: 1-800-123-4567</li>
+                                <li>Address: Impelsys PVT LTD Bangalore</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
