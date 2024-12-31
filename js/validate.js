@@ -1,10 +1,10 @@
 function vlad() {
     var name = document.getElementById("nameInput").value;
-    console.log(name);
+    // console.log(name);
     var email = document.getElementById("emailInput").value;
-    console.log(email);
+    // console.log(email);
     var selectedGender = document.querySelector('input[name="gender"]:checked').value;
-    console.log(selectedGender);
+    // console.log(selectedGender);
     // var selectedHobbies[] = document.querySelector('input[name="hobbies"]:checked').value;
     // console.log(selectedHobbies);
 
@@ -34,7 +34,7 @@ function vlad() {
     }
 
     
-
+    
 }
 
 

@@ -5,6 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
 .container{
     max-width: 800px;
     margin: 50px auto;

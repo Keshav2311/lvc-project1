@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Angular Training</title>
+  <title>LVC</title>
   <meta name="description" content="lvc website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
@@ -42,12 +42,12 @@
 <body>
 
 
-  <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:10vh;">
+  <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:15vh;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary">
-      <div class="logobox">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary ">
+      <div class="logobox p-2">
         <img src="images/logo.jpeg" alt="logo" style="height: 40px; width: 40px; border-radius:50%;">
-        <a class="navbar-brand" href="#">LVC</a>
+        <a class="navbar-brand p-2" href="../My-Web/pages/home.html">LVC</a>
       </div>
       <div class="fluid justify-content-end">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -95,7 +95,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-end" href="blogs/blog.html" target="frm1">
+            <a class="nav-link text-end" href="blogs/read.html" target="frm1">
               <i class="fa-solid fa-bell"></i>
               <span>Blog</span>
             </a>
@@ -120,127 +120,104 @@
   </header>
 
 
-  <iframe class="embed-responsive-item" name="frm1" title="iframe" src="pages/home.html"
-    style="width: 100%; height:100vh;" id="contentframe"></iframe>
+  <iframe class="embed-responsive-item" name="frm1" title="iframe" src="../pages/home.html"
+    style="width: 100%; height:100vh; padding-top: 10vh;" id="contentframe"></iframe>
 
-  <footer class="text-center text-lg-start  text-muted bg-dark text-light" style="width: 100%;">
-    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom bg-dark text-light">
-      <!-- <div class="me-5 d-none d-lg-block">
-        <span>Website Designed & Developed by Achyut Keshav</span>
-      </div> -->
-
-      <div class="bg-dark text-light center d-flex column justify-content-center">
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
+    <footer class="text-center text-lg-start text-muted bg-dark text-light" style="width: 100%;">
+      <section class="d-flex justify-content-center justify-content-lg-between border-bottom bg-dark text-light row w-100">
+          <div class="bg-dark text-light center d-flex column justify-content-center col-md-5 mt-4">
+              <a href="https://www.facebook.com/Impelsys.inc/" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/Impelsys" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.impelsys.com/" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+              </a>
+              <a href="https://www.instagram.com/impelsys/" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://in.linkedin.com/company/impelsys" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+          </div>
+          <section class="bg-dark text-light py-3 col-md-6">
+            <div class="container text-center">
+                <form class="d-flex justify-content-center">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+      </section>
+  
+      <section class="bg-dark text-light">
+          <div class="container text-center text-md-start mt-1">
+              <div class="row mt-3">
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1">
+                      <h6 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3"></i>Impelsys Pvt Ltd
+                      </h6>
+                      <p>
+                          Here you can use rows and columns to organize your footer content. Lorem ipsum
+                          dolor sit amet, consectetur adipisicing elit.
+                      </p>
+                  </div>
+  
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
+                      <h6 class="text-uppercase fw-bold mb-4">
+                          Products
+                      </h6>
+                      <p>
+                          <a href="https://v15.angular.io/docs" class="text-reset">Angular</a>
+                      </p>
+                      <p>
+                          <a href="https://react.dev/" class="text-reset">React</a>
+                      </p>
+                      <p>
+                          <a href="https://vuejs.org/" class="text-reset">Vue</a>
+                      </p>
+                      <p>
+                          <a href="https://laravel.com/" class="text-reset">Laravel</a>
+                      </p>
+                  </div>
+  
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-1">
+                      <h6 class="text-uppercase fw-bold mb-4">
+                          Useful Websites
+                      </h6>
+                      <p>
+                          <a href="https://www.coursera.org" class="text-reset" target="_blank">Coursera</a>
+                      </p>
+                      <p>
+                          <a href="https://www.udemy.com" class="text-reset" target="_blank">Udemy</a>
+                      </p>
+                      <p>
+                          <a href="https://byjusexamprep.com" class="text-reset" target="_blank">Byjus</a>
+                      </p>
+                      <p>
+                          <a href="https://unacademy.com" class="text-reset" target="_blank">Unacademy</a>
+                      </p>
+                  </div>
+  
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
+                      <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                      <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                      <p>
+                          <i class="fas fa-envelope me-3"></i>
+                          info@example.com
+                      </p>
+                      <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                      <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <div class="text-center bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
+          © 2024 Copyright: Achyut Keshav
       </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="bg-dark text-light">
-      <div class="container text-center text-md-start mt-1">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Impelsys Pvt Ltd
-            </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-1">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful Websites
-            </h6>
-            <!-- <select class="bg-dark text-lig?ht"> -->
-            <p>
-              <a href="https://www.coursera.org/courseraplus?utm_medium=sem&utm_source=gg&utm_campaign=b2c_india_coursera-plus_coursera_ftcof_subscription_arte_may-24_dr_exact_sem_rsa_gads_lg-all&campaignid=21327429274&adgroupid=162815312357&device=c&keyword=coursera&matchtype=e&network=g&devicemodel=&adposition=&creativeid=700607287634&hide_mobile_promo&gad_source=1&gclid=Cj0KCQiAvbm7BhC5ARIsAFjwNHs7nKb9odN8acxFyGtrufUMxSuR6BOpwE1C_WsFg_r6vIpgpnW5uWEaAgyNEALw_wcB"
-                class="text-reset" target="_blank">Coursera</a>
-            </p>
-            <p>
-              <a href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.India_dev.&campaigntype=Search&portfolio=BrandDirect&language=EN&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_133043842301_._ad_595460368494_._kw_udemy_._de_c_._dm__._pl__._ti_aud-2268488108799:kwd-296956216253_._li_9061991_._pd__._&matchtype=b&gad_source=1&gclid=Cj0KCQiAvbm7BhC5ARIsAFjwNHub3EQ3KbBqdNC_lA7GIxg24tO_2jcEgCagqlMG9szgYXNd563MmKoaAvGmEALw_wcB"
-                class="text-reset" target="_blank">Udemy</a>
-            </p>
-            <p>
-              <a href="https://byjusexamprep.com/" class="text-reset" target="_blank">Byjus</a>
-            </p>
-            <p>
-              <a href="https://unacademy.com/" class="text-reset" target="_blank">Unacademy</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div class="text-center bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
-      © 2024 Copyright: Achyut Keshav
-      <!-- <a class="text-reset fw-bold" href="https://keshav2311.github.io/lvc-project1/">lvc.com</a> -->
-    </div>
-    <!-- Copyright -->
   </footer>
 
 </body>
