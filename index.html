@@ -3,7 +3,7 @@
 
 <head>
   <title>LVC</title>
-  <meta name="description" content="lvc website">
+  <meta name="description" content="LVC, Learning, Courses, Education">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
@@ -19,18 +19,17 @@
       align-items: center;
     }
 
-    .carousel-item img {
-      filter: blur(5px);
-      filter: brightness(70%);
+    header {
+      height: auto;
+      padding: 0;
+    }
+
+    iframe {
+      height: calc(100vh - 15vh);
     }
 
     .navbar-nav {
       margin-left: auto;
-    }
-
-    h1 {
-      text-align: center;
-      font-weight: bold;
     }
 
     ::-webkit-scrollbar {
@@ -47,7 +46,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary ">
       <div class="logobox p-2">
-        <img src="images/logo.jpeg" alt="logo" style="height: 40px; width: 40px; border-radius:50%;">
+        <img src="images/logo.jpeg" alt="LVC logo" style="height: 40px; width: 40px; border-radius:50%;">
         <a class="navbar-brand p-2" href="../My-Web/pages/home.html">LVC</a>
       </div>
       <div class="fluid justify-content-end">
@@ -59,7 +58,7 @@
       <div class="collapse navbar-collapse text-primary justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link text-end" href="pages/home.html" target="frm1">
+            <a class="nav-link text-end" href="pages/home.html" target="frm1" aria-label="Home Page">
               <i class="fa-solid fa-house" title="home"></i>
               <span class="">Home</span>
               <span class="sr-only">(current)</span>
@@ -90,7 +89,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-end" href="pages/gallary.html" target="frm1">
+            <a class="nav-link text-end" href="pages/gallery.html" target="frm1">
               <i class="fa-solid fa-camera"></i>
               <span>Gallery</span>
             </a>
@@ -126,7 +125,7 @@
 
     <footer class="text-center text-lg-start text-muted bg-dark text-light" style="width: 100%;">
       <section class="d-flex justify-content-center justify-content-lg-between border-bottom bg-dark text-light row w-100">
-          <div class="bg-dark text-light center d-flex column justify-content-center col-md-5 mt-4">
+          <div class="bg-dark text-light center d-flex column justify-content-center col-md-12 mt-3 mb-2">
               <a href="https://www.facebook.com/Impelsys.inc/" class="me-4 text-reset">
                   <i class="fab fa-facebook-f"></i>
               </a>
@@ -143,14 +142,7 @@
                   <i class="fab fa-linkedin"></i>
               </a>
           </div>
-          <section class="bg-dark text-light py-3 col-md-6">
-            <div class="container text-center">
-                <form class="d-flex justify-content-center">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-            </div>
-        </section>
+          
       </section>
   
       <section class="bg-dark text-light">
@@ -183,34 +175,15 @@
                           <a href="https://laravel.com/" class="text-reset">Laravel</a>
                       </p>
                   </div>
-  
-                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-1">
-                      <h6 class="text-uppercase fw-bold mb-4">
-                          Useful Websites
-                      </h6>
-                      <p>
-                          <a href="https://www.coursera.org" class="text-reset" target="_blank">Coursera</a>
-                      </p>
-                      <p>
-                          <a href="https://www.udemy.com" class="text-reset" target="_blank">Udemy</a>
-                      </p>
-                      <p>
-                          <a href="https://byjusexamprep.com" class="text-reset" target="_blank">Byjus</a>
-                      </p>
-                      <p>
-                          <a href="https://unacademy.com" class="text-reset" target="_blank">Unacademy</a>
-                      </p>
-                  </div>
-  
                   <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
                       <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                      <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                      <p><i class="fas fa-home me-3"></i> Bangalore, 560032, INDIA</p>
                       <p>
                           <i class="fas fa-envelope me-3"></i>
-                          info@example.com
+                          keshav.a@impeslsys.com
                       </p>
-                      <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                      <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                      <p><i class="fas fa-phone me-3"></i> + 91 7692839877</p>
+                      <p><i class="fas fa-print me-3"></i> + 91 9834928827</p>
                   </div>
               </div>
           </div>
