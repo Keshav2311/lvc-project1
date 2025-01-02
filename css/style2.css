@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
-.home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#herosection {
+    background-image: url('../images/carousal/back.png');
     width: 100%;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    padding: 20px;
 }
 
 p {
@@ -58,86 +67,9 @@ video {
 }
 
 @media screen and (max-width:800px) {
-    .home {
-        flex-direction: column;
-    }
-
     p {
         width: 80%;
     }
-}
-
-.first-caption {
-    top: 20%;
-    right: 20;
-}
-
-.first-caption h1 {
-    font-weight: bolder;
-    color: black;
-}
-
-.first-caption button {
-    align-items: center;
-}
-
-.first-caption p {
-    font-weight: bold;
-    text-align: center;
-    color: black;
-}
-
-.second-caption {
-    top: 20%;
-    right: 20;
-}
-
-.second-caption h1 {
-    color: black;
-    font-weight: bolder;
-}
-
-.second-caption p {
-    font-weight: bold;
-    color: black;
-}
-
-.second-caption button {
-    align-items: center;
-}
-
-.third-caption {
-    top: 20%;
-    right: 80;
-}
-
-.third-caption h1 {
-    text-align: center;
-    font-weight: bolder;
-    color: #070606;
-}
-
-.third-caption button {
-    color: rgb(250, 250, 247);
-    background-color: rgb(214, 199, 199)
-}
-
-/*mission vision section css*/
-
-
-
-/* img{
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-} */
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .title {
@@ -200,65 +132,11 @@ a {
     margin-right: auto;
 }
 
-.section2 table,
-.section3 table {
-    width: 100%;
-}
-
-.section2 table td,
-.section3 table td {
-    width: 50%;
-}
-
-.section2 table td img,
-.section3 table td img {
-    width: 80%;
-    height: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.5);
-}
-
-.section3 table td img {
-    float: right;
-}
-
-
-@media (max-width:720px) {
-
-    .section2 table td,
-    .section3 table td {
-        width: 100%;
-        display: block;
-    }
-
-    .section3 table td img {
-        float: none;
-        margin-top: 4%;
-    }
-
-    .section2 table td img,
-    .section3 table td img {
-        width: 100%;
-        height: 60%;
-    }
-}
-
 @media (max-width:400px) {
-
-    img{
-        height: 100px;
-        width: 100px;
-    }
 
     .section2,
     .section3 {
         font-size: 12px;
-    }
-
-    .section3 table td img {
-        float: none;
-        margin-top: 8%;
     }
 
     .btn1,
@@ -279,25 +157,6 @@ a {
     right: 0;
 }
 
-
-#herosection {
-    background-image: url('../images/carousal/back.png');
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: end;
-    padding: 20px;
-}
-
-.image {
-    position: relative;
-    width: 100%;
-
-}
-
 .card {
     transition: transform 0.3s ease;
 }
@@ -306,13 +165,27 @@ a {
     transform: translateY(-10px);
 }
 
+@media screen and (max-width: 800px) {
+    #herosection {
+        height: auto;
+        padding: 10px;
+    }
 
-.background h1 {
-    font-weight: bolder;
-}
+    video {
+        width: 90%;
+    }
 
-.background p {
-    font-weight: bold;
-    text-align: center;
+    .card {
+        margin: 1rem 0;
+    }
 
+    .about{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+    }
+
+    .title, .sub-title, p{
+        width: 100%;
+    }
 }

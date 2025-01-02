@@ -35,6 +35,26 @@
     ::-webkit-scrollbar {
       width: 0px;
     }
+
+    .dropdown-menu .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-top: 0;
+      margin-left: -1px;
+    }
+
+    .dropdown-menu .dropdown-toggle::after {
+      border-top: 0.3em solid transparent;
+      border-right: 0.3em solid transparent;
+      border-left: 0.3em solid;
+      border-bottom: 0;
+      content: "";
+      float: right;
+      margin-top: 0.25em;
+      margin-right: -1em;
+    }
+   
   </style>
 
 </head>
@@ -43,7 +63,6 @@
 
 
   <header style="position: fixed; top: 0px; left: 0px; z-index: 10; width: 100%; height:15vh;">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-primary ">
       <div class="logobox p-2">
         <img src="images/logo.jpeg" alt="LVC logo" style="height: 40px; width: 40px; border-radius:50%;">
@@ -65,23 +84,44 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle-dark text-end" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-end" href="#" id="navbarDropdown" role="button" 
+               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-book"></i>
-              <span class="">Courses</span>
+              <span>Courses</span>
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item text-secondary text-end" href="courses/mern.html" target="frm1">MERN</a>
-              <a class="dropdown-item text-secondary text-end" href="courses/mean.html" target="frm1">MEAN</a>
-              <a class="dropdown-item text-secondary text-end" href="courses/gen_ai.html" target="frm1">GEN AI</a>
+        
+              <!-- Full Stack Dropdown -->
+              <div class="dropdown-item dropdown">
+                <div class="dropdown-toggle text-secondary text-end"  href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','fullstack')">Full Stack</div>
+                <ul class="dropdown-menu bg-dark" id="fullstack" name="coursemenuitem">
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/mern.html" target="frm1">MERN</a></li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/mean.html" target="frm1">MEAN</a></li>
+                </ul>
+              </div>
+             
+          
+              <!-- AI Dropdown -->
+              <div class="dropdown-item dropdown">
+                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','aidropbox')" >AI</div>
+                <ul class="dropdown-menu bg-dark" name="coursemenuitem" id="aidropbox">
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/copilot.html" target="frm1">Copilot</a></li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/gen_ai.html" target="frm1">Gen AI</a></li>
+                </ul>
+              </div>
+          
+              <!-- Cloud Dropdown -->
+              <div class="dropdown-item dropdown">
+                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','clouddropbox')"> Cloud</div>
+                <ul class="dropdown-menu bg-dark" id="clouddropbox" name="coursemenuitem"> 
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/aws.html" target="frm1">AWS</a></li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/azure.html" target="frm1">Azure</a></li>
+                </ul>
+              </div>
+        
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-end" href="pages/scholarship.html" target="frm1">
-              <i class="fa-solid fa-scroll"></i>
-              <span>Scholarship</span>
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link text-end" href="pages/registration.html" target="frm1">
               <i class="fa-solid fa-person"></i>
@@ -115,85 +155,107 @@
         </ul>
       </div>
     </nav>
-
-
   </header>
-
-
   <iframe class="embed-responsive-item" name="frm1" title="iframe" src="../pages/home.html"
     style="width: 100vw; height:100vh; padding-top: 10vh;" id="contentframe"></iframe>
-
-    <footer class="text-center text-lg-start text-muted bg-dark text-light" style="width: 100%;">
-      <section class="d-flex justify-content-center justify-content-lg-between border-bottom bg-dark text-light row w-100">
-          <div class="bg-dark text-light center d-flex column justify-content-center col-md-12 mt-3 mb-2">
-              <a href="https://www.facebook.com/Impelsys.inc/" class="me-4 text-reset">
-                  <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://x.com/Impelsys" class="me-4 text-reset">
-                  <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.impelsys.com/" class="me-4 text-reset">
-                  <i class="fab fa-google"></i>
-              </a>
-              <a href="https://www.instagram.com/impelsys/" class="me-4 text-reset">
-                  <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://in.linkedin.com/company/impelsys" class="me-4 text-reset">
-                  <i class="fab fa-linkedin"></i>
-              </a>
-          </div>
-          
-      </section>
-  
-      <section class="bg-dark text-light">
-          <div class="container text-center text-md-start mt-1">
-              <div class="row mt-3">
-                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1">
-                      <h6 class="text-uppercase fw-bold mb-4">
-                          <i class="fas fa-gem me-3"></i>Impelsys Pvt Ltd
-                      </h6>
-                      <p>
-                          Here you can use rows and columns to organize your footer content. Lorem ipsum
-                          dolor sit amet, consectetur adipisicing elit.
-                      </p>
-                  </div>
-  
-                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
-                      <h6 class="text-uppercase fw-bold mb-4">
-                          Products
-                      </h6>
-                      <p>
-                          <a href="https://v15.angular.io/docs" class="text-reset">Angular</a>
-                      </p>
-                      <p>
-                          <a href="https://react.dev/" class="text-reset">React</a>
-                      </p>
-                      <p>
-                          <a href="https://vuejs.org/" class="text-reset">Vue</a>
-                      </p>
-                      <p>
-                          <a href="https://laravel.com/" class="text-reset">Laravel</a>
-                      </p>
-                  </div>
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
-                      <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                      <p><i class="fas fa-home me-3"></i> Bangalore, 560032, INDIA</p>
-                      <p>
-                          <i class="fas fa-envelope me-3"></i>
-                          keshav.a@impeslsys.com
-                      </p>
-                      <p><i class="fas fa-phone me-3"></i> + 91 7692839877</p>
-                      <p><i class="fas fa-print me-3"></i> + 91 9834928827</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-  
-      <div class="text-center bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
-          © 2024 Copyright: Achyut Keshav
+  <footer class="text-center text-lg-start text-muted bg-dark text-light" style="width: 100%;">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between border-bottom bg-dark text-light row w-100">
+      <div class="bg-dark text-light center d-flex column justify-content-center col-md-12 mt-3 mb-2">
+        <a href="https://www.facebook.com/Impelsys.inc/" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/Impelsys" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.impelsys.com/" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/impelsys/" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://in.linkedin.com/company/impelsys" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
-  </footer>
 
+    </section>
+
+    <section class="bg-dark text-light">
+      <div class="container text-center text-md-start mt-1">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Impelsys Pvt Ltd
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="https://v15.angular.io/docs" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="https://react.dev/" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="https://vuejs.org/" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="https://laravel.com/" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Bangalore, 560032, INDIA</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              keshav.a@impeslsys.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 91 7692839877</p>
+            <p><i class="fas fa-print me-3"></i> + 91 9834928827</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center bg-dark text-light" style="background-color: rgba(3, 3, 3, 0.05);">
+      © 2024 Copyright: Achyut Keshav
+    </div>
+  </footer>
 </body>
+
+<script>
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   // Add hover functionality for dropdowns
+  //   const dropdowns = document.querySelectorAll(".dropdown");
+  //   dropdowns.forEach((dropdown) => {
+  //     dropdown.addEventListener("click", function () {
+  //       const submenu = dropdown.querySelector(".dropdown-menu");
+  //       if (submenu) submenu.classList.add("show");
+  //     });
+  //   });
+  // });
+
+  function togglesubbbmenu(name,item){
+    console.log(name,item);
+    let dropitems = document.getElementsByName(name);
+    Array.from(dropitems).forEach(item => {
+    item.classList.remove('show');
+});
+    // for (i=0,i<3;i++;){
+    //   console.log(dropitems[i])
+    //       dropitems[i].classList.remove('show')
+    // }
+    document.getElementById(item).classList.add('show');
+  }
+</script>
+
 
 </html>
