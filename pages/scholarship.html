@@ -3,94 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Scholarship Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/scholarship.css">
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body onload="condition()">
-    <div class="background-image"></div>
-    <div class="hello">
-        <form class="formulation" name="form1" method="Get" onsubmit="return scoreCard()">
-            <h1 class="h1 text-dark text-center">Scholarship<i class="fa-solid fa-scroll ml-3"></i></h1>
-            <h5>Total Fees for LVC Course is $1000</h5>
-            <div class="container mt-2">
-                <div class="form-group">
-                    <label for="nameInput">Name</label>
-                    <input type="text" class="form-control mt-2" id="nameInput" placeholder="abc" name="nameInput" required>
+<body onload="condition()" class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+
+    <!-- Background Image -->
+    <div class="position-fixed top-0 start-0 w-100 h-100 bg-image"
+         style="background-image: url('../images/gallary/scholarsh.png'); filter: blur(8px); background-size: cover; background-position: center; z-index: -1;"></div>
+
+    <!-- Form Section -->
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg border-0 p-4" style="width: 100%; max-width: 600px; background-color: rgba(255, 255, 255, 0.9);">
+            <h1 class="text-center text-primary mb-4">
+                Scholarship Form <i class="fa-solid fa-scroll ms-2"></i>
+            </h1>
+            <h5 class="text-center mb-4 text-dark">Total Fees for LVC Course is $1000</h5>
+            <form name="form1" method="GET" onsubmit="return scoreCard()">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" name="nameInput" required>
                 </div>
-                <div class="form-group mt-3 text-left">
-                    <h3>Marks in Intermediate:</h3>
+                <!-- Marks -->
+                <h3 class="text-dark mt-4">Marks in Intermediate:</h3>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="math" class="form-label">Maths</label>
+                        <input type="number" class="form-control" id="math" name="math" required max="100">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="english" class="form-label">English</label>
+                        <input type="number" class="form-control" id="english" name="english" required max="100">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="computer" class="form-label">Computer</label>
+                        <input type="number" class="form-control" id="computer" name="computer" required max="100">
+                    </div>
                 </div>
-                <div class="form-group form-check-inline">
-                    <label for="math">Maths</label>
-                    <input type="number" class="form-control mt-2 ml-30" name="math" id="math" required max="100">
-                </div>
-                <div class="form-group form-check-inline">
-                    <label for="english">English</label>
-                    <input type="number" class="form-control mt-2 ml-3" name="english" id="english" required max="100">
-                </div>
-                <div class="form-group form-check-inline">
-                    <label for="computer">Computer</label>
-                    <input type="number" class="form-control mt-2 ml-3" name="computer" id="computer" required max="100">
-                </div>
-                <div class="form-group mt-3">
-                    <h3>Metric Percentage: </h3>
-                    <select class="ml-10" id="metricPercentage" name="metricPercentage" required>
-                        <option class="form-control ml-3" id="option0">select</option>
-                        <option class="form-control ml-3" id="option1" value="90">Greater than and equal to 90</option>
-                        <option class="form-control ml-3" id="option3" value="80">Greater than and equal to 80 but less than 90</option>
-                        <option class="form-control ml-3" id="option4" value="0">Less than 80</option>
+                <!-- Metric Percentage -->
+                <div class="mt-4">
+                    <label for="metricPercentage" class="form-label"><h3>Metric Percentage:</h3></label>
+                    <select class="form-select" id="metricPercentage" name="metricPercentage" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="90">Greater than or equal to 90</option>
+                        <option value="80">Greater than or equal to 80 but less than 90</option>
+                        <option value="0">Less than 80</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="scholarship"><h4>Got Scholarship</h4></label>
-                    <input type="text" class="form-control mt-2 text-center" id="scholarship" name="scholarship" disabled>
+                <!-- Scholarship -->
+                <div class="mt-4">
+                    <label for="scholarship" class="form-label"><h4>Scholarship</h4></label>
+                    <input type="text" class="form-control text-center" id="scholarship" name="scholarship" disabled>
                 </div>
-                <div class="container d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary mt-3">Generate</button>
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5">Generate</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
+
     <script>
         var selectedValue = 0;
+
         function scoreCard() {
-            console.log("hello");
             var name = document.getElementById("nameInput").value;
-            console.log(name);
-            var maths = document.getElementById("math").value;
-            var mathsInteger = parseInt(maths);
-            var english = document.getElementById("english").value;
-            var englishInteger = parseInt(english, 10);
-            var computer = document.getElementById("computer").value;
-            var computerInteger = parseInt(computer, 10);
-            var total = mathsInteger + englishInteger + computerInteger;
-            console.log("total: " + total);
+            var maths = parseInt(document.getElementById("math").value);
+            var english = parseInt(document.getElementById("english").value);
+            var computer = parseInt(document.getElementById("computer").value);
+            var total = maths + english + computer;
             var percentage = total / 3;
-            console.log(percentage, selectedValue);
-            if ((percentage >= 90) && (selectedValue == "90")) {
+
+            if (percentage >= 90 && selectedValue == "90") {
                 alert("You have got 50% Scholarship");
                 document.getElementById('scholarship').value = "$500 to be Paid";
-                return false;
-            } else if ((percentage >= 80) && (percentage < 90) && (selectedValue == "80")) {
+            } else if (percentage >= 80 && percentage < 90 && selectedValue == "80") {
                 alert("You have got 25% Scholarship");
                 document.getElementById('scholarship').value = "$750 to be Paid";
-                return false;
             } else {
                 alert("No Scholarship");
                 document.getElementById('scholarship').value = "$1000 to be Paid";
-                return false;
             }
+            return false;
         }
-        document.getElementById('metricPercentage').addEventListener('change', function() {
+
+        document.getElementById('metricPercentage').addEventListener('change', function () {
             selectedValue = this.value;
-            console.log('Selected value:', selectedValue);
         });
+
         function condition() {
             let sval = JSON.parse(localStorage.getItem("agree") || false);
             if (!sval) {
