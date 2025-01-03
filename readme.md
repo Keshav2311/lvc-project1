@@ -15,11 +15,8 @@ Currently made with Vanila HTML, CSS and JS, it will soon be built with angular 
 3. Learn and thrive
 
 ## Todo 
-- header in mobile view, and justify content
-- Carousal update, and move to homepage
-- Navigation bar Courses update
-- proper display of homepage
-- validate and use forms
-- make contact page better. // Completed
-- make registration form better and responsive
-- style blogs and courses
+- help section in the evening
+- contact section also in the evening
+- blog just place the arrow in the right side
+- scholarship section in evening (!important)
+- what validation required we illadd in the evening
