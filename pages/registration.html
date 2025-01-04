@@ -24,18 +24,18 @@
       </h1>
       <form action="../pages/thanks.html" onsubmit="return vlad()" id="form">
         <div class="mb-3">
-          <label for="nameInput" class="form-label">Name</label>
+          <label for="nameInput" class="form-label">Name*</label>
           <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
         </div>
         <div class="mb-3">
-          <label for="emailInput" class="form-label">Email</label>
+          <label for="emailInput" class="form-label">Email*</label>
           <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
         </div>
         <div class="mb-3">
           <label class="form-label">Gender</label>
           <div class="d-flex gap-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male">
               <label class="form-check-label" for="male">Male</label>
             </div>
             <div class="form-check">
@@ -49,18 +49,18 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="form-label">Subjects</label>
+          <label class="form-label">Subjects*</label>
           <div class="d-flex flex-wrap gap-3">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="hobbies" id="engineering" value="engineering">
+              <input class="form-check-input" type="checkbox" name="subject" id="engineering" value="engineering">
               <label class="form-check-label" for="engineering">Engineering</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="hobbies" id="medical" value="medical">
+              <input class="form-check-input" type="checkbox" name="subject" id="medical" value="medical">
               <label class="form-check-label" for="medical">Medical</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" name="hobbies" id="law" value="law">
+              <input class="form-check-input" type="checkbox" name="subject" id="law" value="law">
               <label class="form-check-label" for="law">Law</label>
             </div>
           </div>
@@ -75,6 +75,17 @@
       </form>
     </div>
   </div>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+            const checkboxes = document.querySelectorAll('input[name="subject"]');
+            let checkedOne = Array.prototype.slice.call(checkboxes).some(x => x.checked);
+            if (!checkedOne) {
+                alert('Please select at least one hobby.');
+                event.preventDefault();
+            }
+        });
+  </script>
 
 </body>
 

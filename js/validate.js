@@ -78,6 +78,6 @@ function vladan(){
     }
     else {
         alert("Name is: " + firstName + " " + lastName);
-        return true;
+        return false;
     }
 }
