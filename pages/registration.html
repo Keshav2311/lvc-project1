@@ -11,9 +11,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <style>
+    .blurred {
+            filter: blur(5px);
+        }
+  </style>
 </head>
 
-<body class="bg-light d-flex align-items-center justify-content-center min-vh-100">
+<body onload="conditions()" class="bg-light d-flex align-items-center justify-content-center min-vh-100" id="parentContent">
 
   
   <div class="position-fixed top-0 start-0 w-100 h-100 bg-image" style="background-image: url('../images/gallary/registration.jpg'); filter: blur(8px); background-size: cover; background-position: center; z-index: -1;"></div>
@@ -85,6 +90,23 @@
                 event.preventDefault();
             }
         });
+
+        function conditions() {
+            const width = 700;
+            const height = 400;
+            const left = (screen.width / 2) - (width / 2);
+            const top = (screen.height / 2) - (height / 2);
+
+            document.getElementById('parentContent').classList.add('blurred');
+            const termsWindow = window.open('../pages/terms2.html', 'condition', `width=${width}, height=${height}, top=${top}, left=${left}`);
+            
+            const interval = setInterval(() => {
+                if (termsWindow.closed) {
+                    clearInterval(interval);
+                    document.getElementById('parentContent').classList.remove('blurred');
+                }
+            }, 100000);
+        }
   </script>
 
 </body>
