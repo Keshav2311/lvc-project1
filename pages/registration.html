@@ -86,7 +86,7 @@
             const checkboxes = document.querySelectorAll('input[name="subject"]');
             let checkedOne = Array.prototype.slice.call(checkboxes).some(x => x.checked);
             if (!checkedOne) {
-                alert('Please select at least one hobby.');
+                alert('Please select at least one Subject.');
                 event.preventDefault();
             }
         });

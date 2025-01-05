@@ -54,7 +54,6 @@
       margin-top: 0.25em;
       margin-right: -1em;
     }
-   
   </style>
 
 </head>
@@ -84,44 +83,45 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-end" href="#" id="navbarDropdown" role="button" 
-               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-end" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-book"></i>
               <span>Courses</span>
             </a>
             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-        
-              <!-- Full Stack Dropdown -->
               <div class="dropdown-item dropdown">
-                <div class="dropdown-toggle text-secondary text-end"  href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','fullstack')">Full Stack</div>
+                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown"
+                  onmouseenter="togglesubbbmenu('coursemenuitem','fullstack')">Full Stack</div>
                 <ul class="dropdown-menu bg-dark" id="fullstack" name="coursemenuitem">
-                  <li><a class="dropdown-item text-secondary text-end" href="courses/mern.html" target="frm1">MERN</a></li>
-                  <li><a class="dropdown-item text-secondary text-end" href="courses/mean.html" target="frm1">MEAN</a></li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/mern.html" target="frm1">MERN</a>
+                  </li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/mean.html" target="frm1">MEAN</a>
+                  </li>
                 </ul>
               </div>
-             
-          
-              <!-- AI Dropdown -->
               <div class="dropdown-item dropdown">
-                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','aidropbox')" >AI</div>
+                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown"
+                  onmouseenter="togglesubbbmenu('coursemenuitem','aidropbox')">AI</div>
                 <ul class="dropdown-menu bg-dark" name="coursemenuitem" id="aidropbox">
                   <li><a class="dropdown-item text-secondary text-end" href="courses/ml.html" target="frm1">ML</a></li>
-                  <li><a class="dropdown-item text-secondary text-end" href="courses/gen_ai.html" target="frm1">Gen AI</a></li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/gen_ai.html" target="frm1">Gen
+                      AI</a></li>
                 </ul>
               </div>
-          
-              <!-- Cloud Dropdown -->
               <div class="dropdown-item dropdown">
-                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown" onmouseenter="togglesubbbmenu('coursemenuitem','clouddropbox')"> Cloud</div>
-                <ul class="dropdown-menu bg-dark" id="clouddropbox" name="coursemenuitem"> 
-                  <li><a class="dropdown-item text-secondary text-end" href="courses/aws.html" target="frm1">AWS</a></li>
-                  <li><a class="dropdown-item text-secondary text-end" href="courses/azure.html" target="frm1">Azure</a></li>
+                <div class="dropdown-toggle text-secondary text-end" href="#" data-bs-toggle="dropdown"
+                  onmouseenter="togglesubbbmenu('coursemenuitem','clouddropbox')"> Cloud</div>
+                <ul class="dropdown-menu bg-dark" id="clouddropbox" name="coursemenuitem">
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/aws.html" target="frm1">AWS</a>
+                  </li>
+                  <li><a class="dropdown-item text-secondary text-end" href="courses/azure.html" target="frm1">Azure</a>
+                  </li>
                 </ul>
               </div>
-        
+
             </div>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link text-end" href="pages/registration.html" target="frm1">
               <i class="fa-solid fa-person"></i>
@@ -232,27 +232,12 @@
 </body>
 
 <script>
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   // Add hover functionality for dropdowns
-  //   const dropdowns = document.querySelectorAll(".dropdown");
-  //   dropdowns.forEach((dropdown) => {
-  //     dropdown.addEventListener("click", function () {
-  //       const submenu = dropdown.querySelector(".dropdown-menu");
-  //       if (submenu) submenu.classList.add("show");
-  //     });
-  //   });
-  // });
-
-  function togglesubbbmenu(name,item){
-    console.log(name,item);
+  function togglesubbbmenu(name, item) {
+    console.log(name, item);
     let dropitems = document.getElementsByName(name);
     Array.from(dropitems).forEach(item => {
-    item.classList.remove('show');
-});
-    // for (i=0,i<3;i++;){
-    //   console.log(dropitems[i])
-    //       dropitems[i].classList.remove('show')
-    // }
+      item.classList.remove('show');
+    });
     document.getElementById(item).classList.add('show');
   }
 </script>
