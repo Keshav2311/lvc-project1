@@ -13,10 +13,3 @@ Currently made with Vanila HTML, CSS and JS, it will soon be built with angular 
 1. clone the repository
 2. run the index.html using live server
 3. Learn and thrive
-
-## Todo 
-- help section in the evening
-- contact section also in the evening
-- blog just place the arrow in the right side
-- scholarship section in evening (!important)
-- what validation required we illadd in the evening
